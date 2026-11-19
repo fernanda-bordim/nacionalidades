@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia Nacionalidade Espanhola para Brasileiros</title>
+<meta name="description" content="Guia gratuito e independente para brasileiros organizarem o pedido de nacionalidade espanhola por residência (2 anos).">
+<style>
+:root{
+  --bg:#F6F7F9;--panel:#FFFFFF;--side:#FBFBFC;--line:#E8EAEE;--line2:#F0F1F4;
+  --ink:#16181D;--ink2:#3F444D;--muted:#7A808A;
+  --accent:#A3233A;--accent-soft:#FBEFF1;--gold:#C9A04E;
+  --c-fazer:#A0A6B0;--c-and:#3B7DD8;--c-pend:#E0A030;--c-conc:#2FA36B;--c-na:#C9CDD3;
+  --r:12px;--sh:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.06);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{font-size:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:.9375rem;font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.app{display:flex;min-height:100vh}
+/* ---------- menu lateral ---------- */
+.side{width:240px;flex:none;background:var(--side);border-right:1px solid var(--line);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;padding:20px 14px}
+.brand{display:flex;gap:10px;align-items:center;padding:0 6px 22px}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(180deg,#B8364C 0 30%,#E7C36A 30% 70%,#B8364C 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);flex:none}
+.brand b{display:block;font-size:.92rem;font-weight:600;line-height:1.2}
+.brand small{display:block;color:var(--muted);font-size:.75rem}
+.navlabel{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:0 10px 8px}
+.snav a{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:8px;color:var(--ink2);font-size:.9rem;margin-bottom:2px;text-decoration:none}
+.snav a svg{width:17px;height:17px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
+.snav a:hover{background:#F1F2F5}
+.snav a.on{background:#fff;color:var(--ink);font-weight:500;box-shadow:var(--sh);border:1px solid var(--line)}
+.snav a.on svg{color:var(--accent);opacity:1}
+.side-foot{margin-top:auto;padding:12px 10px 0;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted);line-height:1.45}
+.mainwrap{flex:1;min-width:0;display:flex;flex-direction:column}
+.mtop{display:none}
+.scrim{display:none}
+@media(max-width:900px){
+  .side{position:fixed;left:0;top:0;z-index:50;transform:translateX(-100%);transition:transform .2s ease;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+  .side.open{transform:none}
+  .scrim.on{display:block;position:fixed;inset:0;background:rgba(16,18,24,.3);z-index:45}
+  .mtop{display:flex;gap:10px;align-items:center;position:sticky;top:0;z-index:20;background:rgba(246,247,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 14px}
+  .mtop button{border:1px solid var(--line);background:#fff;border-radius:8px;width:38px;height:38px;min-height:0;padding:0;display:flex;align-items:center;justify-content:center}
+  .mtop button svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round}
+  .mtop span{font-weight:600}
+}
+main{width:100%;max-width:1040px;margin:0 auto;padding:36px 32px 48px}
+@media(max-width:600px){main{padding:22px 16px 40px}}
+section.view{display:none}section.view.on{display:block}
+/* ---------- cabeçalho de página ---------- */
+.ph{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin:0 0 24px}
+.ph h1,section.view>h2:first-child{font-size:1.6rem;margin:0;line-height:1.2;font-weight:600}
+.ph p{margin:4px 0 0;color:var(--muted)}
+h2.sec{font-size:1.05rem;margin:36px 0 12px;display:flex;align-items:center;gap:8px}
+h2.sec::before{content:"";width:4px;height:16px;border-radius:2px;background:var(--accent)}
+h3{font-size:.98rem;margin:20px 0 8px}
+/* ---------- cartões ---------- */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin:0 0 20px;box-shadow:var(--sh)}
+.card-t{font-size:.8rem;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 12px}
+.note{background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);padding:10px 14px;border-radius:10px;font-size:.85rem;color:var(--ink2);margin:0 0 16px}
+.note.red{border-left-color:var(--accent)}
+.muted{color:var(--muted);font-size:.875rem}
+.small{font-size:.8rem}
+label{display:block;font-weight:500;font-size:.85rem;margin:0 0 6px;color:var(--ink2)}
+input[type=text],input[type=date],input[type=search],select,textarea{width:100%;min-width:0;font:inherit;font-size:.93rem;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+input:hover,select:hover,textarea:hover{border-color:#D5D8DE}
+textarea{min-height:72px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#B9BEC7;box-shadow:0 0 0 3px rgba(163,35,58,.10)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.g2>*,.g3>*{min-width:0}
+.g2>.card{margin:0}
+@media(max-width:700px){.g2{grid-template-columns:minmax(0,1fr)}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+button,.btn{font:inherit;font-size:.875rem;font-weight:500;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;min-height:38px;transition:background .15s,border-color .15s}
+button:hover{background:#F7F8FA;border-color:#D5D8DE}
+button.pri{background:var(--ink);border-color:var(--ink);color:#fff}
+button.pri:hover{background:#2A2E36}
+button.gold{background:var(--ink);border-color:var(--ink);color:#fff}
+button.danger{color:var(--accent)}
+button.sm{padding:6px 11px;min-height:32px;font-size:.82rem}
+button[disabled]{opacity:.45;cursor:not-allowed}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+/* ---------- indicadores ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 20px}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-align:left;cursor:pointer;box-shadow:var(--sh);display:flex;flex-direction:column-reverse;gap:4px;min-height:auto}
+.stat:hover{border-color:#D5D8DE;background:#fff}
+.stat b{font-size:1.75rem;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.stat span{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px}
+.stat span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c-fazer);flex:none}
+.stat.s-and span::before{background:var(--c-and)}.stat.s-pend span::before{background:var(--c-pend)}.stat.s-conc span::before{background:var(--c-conc)}
+.stat.v-y span::before{background:var(--c-pend)}.stat.v-r span::before{background:var(--accent)}
+#cntValid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bar{height:8px;background:#EEF0F3;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--c-conc);border-radius:99px;width:0;transition:width .3s}
+.bigpct{font-size:2rem;font-weight:500;letter-spacing:-.02em}
+/* ---------- pílulas e pontos ---------- */
+.pill{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:99px;font-size:.75rem;font-weight:500;white-space:nowrap;border:1px solid var(--line);background:#fff;color:var(--ink2)}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c-fazer)}
+.p-and::before{background:var(--c-and)}.p-pend::before{background:var(--c-pend)}.p-conc::before{background:var(--c-conc)}.p-na::before{background:var(--c-na)}
+.v-g::before{background:var(--c-conc)}.v-y::before{background:var(--c-pend)}.v-r::before{background:var(--accent)}
+.v-r{color:var(--accent);border-color:#F1CDD3;background:#FFF8F9}.v-y{color:#8A5D00;border-color:#F2DFB4;background:#FFFCF4}
+.a-g::before{background:var(--c-and)}.a-y::before{background:var(--c-pend)}.a-r::before{background:var(--accent)}
+.a-r{color:var(--accent)}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;background:var(--c-fazer);display:inline-block}
+.d-and{background:var(--c-and)}.d-pend{background:var(--c-pend)}.d-conc{background:var(--c-conc)}.d-na{background:var(--c-na)}
+ul.plain{margin:6px 0;padding-left:18px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:10px 0;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+ul.list li:first-child{border-top:0;padding-top:0}
+ul.list a{color:var(--ink)}
+/* ---------- instruções ---------- */
+details.ins{border:1px solid var(--line);border-radius:var(--r);margin:0 0 10px;background:#fff;box-shadow:var(--sh)}
+details.ins>summary{cursor:pointer;padding:15px 18px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:8px}
+details.ins>summary::-webkit-details-marker{display:none}
+details.ins>summary::after{content:"";width:8px;height:8px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);margin:5px 4px 0 0;transition:transform .15s;flex:none}
+details.ins[open]>summary::after{transform:rotate(-135deg);margin-top:9px}
+details.ins .b{padding:0 18px 16px;color:var(--ink2)}
+details.ins .b p{margin:8px 0}
+.links a{display:inline-block;margin:2px 12px 2px 0}
+/* ---------- meu plano (tabela) ---------- */
+.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:0 0 12px}
+@media(max-width:800px){.toolbar{grid-template-columns:1fr 1fr}.toolbar .full{grid-column:1/-1}}
+.seg{display:inline-flex;background:#EEF0F3;border-radius:9px;padding:3px}
+.seg button{border:0;border-radius:7px;min-height:30px;padding:5px 14px;background:transparent;color:var(--ink2)}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:var(--sh)}
+.tbl{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin:0 0 20px}
+.thead,.tr{display:grid;grid-template-columns:minmax(0,2.6fr) 170px minmax(0,1.5fr) 110px 70px;gap:12px;align-items:center;padding:11px 18px}
+.thead{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--line);background:#FCFCFD}
+.grp{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#FAFAFB;border-bottom:1px solid var(--line2);font-weight:600;font-size:.88rem}
+.grp+.tr,.tr+.tr{border-top:1px solid var(--line2)}
+.tr:hover{background:#FCFCFD}
+.tr.st-na{opacity:.6}
+.c-name{display:flex;gap:10px;align-items:center;min-width:0}
+.c-name .num{flex:none;width:22px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.c-name span.t{overflow:hidden;text-overflow:ellipsis}
+.c-st{display:flex;align-items:center;gap:8px}
+.c-st select{border:1px solid transparent;background:transparent;padding:5px 8px;font-size:.85rem}
+.c-st select:hover{border-color:var(--line);background:#fff}
+.c-val{display:flex;flex-wrap:wrap;gap:6px}
+.c-prog{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.mini{flex:1;height:5px;background:#EEF0F3;border-radius:99px;overflow:hidden;min-width:30px}
+.mini i{display:block;height:100%;background:var(--c-conc);border-radius:99px}
+.c-act{text-align:right}
+@media(max-width:800px){
+  .thead{display:none}
+  .tr{grid-template-columns:1fr auto;grid-template-areas:"n a" "s s" "v v" "p p";gap:8px;padding:14px 16px}
+  .c-name{grid-area:n}.c-act{grid-area:a}.c-st{grid-area:s}.c-val{grid-area:v}.c-prog{grid-area:p}
+  .c-val:empty{display:none}
+}
+.kanban{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px}
+.kcol{flex:0 0 270px;background:#EEF0F3;border-radius:var(--r);padding:10px}
+.kcol h4{margin:4px 6px 10px;font-size:.85rem;font-weight:500;display:flex;gap:8px;align-items:center}
+.kcol h4 .muted{margin-left:auto}
+.kcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:0 0 8px;box-shadow:var(--sh)}
+.kcard b{display:block;font-size:.88rem;font-weight:500;margin-bottom:4px}
+.kcard select{font-size:.82rem;padding:5px 8px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.row select{width:auto;flex:1;min-width:130px}
+/* ---------- detalhe (painel) ---------- */
+.subs{list-style:none;padding:0;margin:8px 0 14px}
+.subs li{padding:6px 0}
+.subs label{display:flex;gap:10px;align-items:center;font-weight:400;margin:0;cursor:pointer;color:var(--ink)}
+.subs input{width:18px;height:18px;accent-color:var(--accent);flex:none}
+.calc{font-size:.78rem;color:var(--c-and);margin-top:5px}
+.hint{font-size:.8rem;color:var(--muted);margin-top:5px}
+.fname{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px;background:#F7F8FA;border:1px solid var(--line);padding:10px 12px;border-radius:10px}
+.fname code{flex:1;word-break:break-all;font-size:.85rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.dlg-bg{position:fixed;inset:0;background:rgba(16,18,24,.28);display:none;justify-content:flex-end;z-index:60}
+.dlg-bg.on{display:flex}
+.dlg{background:#fff;width:100%;max-width:520px;height:100%;overflow:auto;padding:24px;box-shadow:-10px 0 30px rgba(0,0,0,.08)}
+.dlg h3{font-size:1.15rem;margin:0 40px 14px 0;line-height:1.3}
+.dlg .x{position:sticky;top:0;float:right;z-index:2;width:32px;height:32px;padding:0;min-height:0}
+@media(max-width:600px){.dlg-bg{align-items:flex-end}.dlg{height:auto;max-height:92vh;border-radius:16px 16px 0 0;padding:20px}}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-size:.85rem;display:none;z-index:70;max-width:92%;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.toast.on{display:block}
+/* ---------- estudos ---------- */
+.q{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;margin:0 0 16px;box-shadow:var(--sh)}
+.q .opts{display:grid;gap:8px;margin-top:14px}
+.q .opts button{text-align:left;font-weight:400;padding:11px 14px}
+.q .opts button[disabled]{opacity:1;cursor:default}
+.q .opts button.ok{background:#F2FAF6;border-color:var(--c-conc)}
+.q .opts button.no{background:#FFF6F7;border-color:var(--accent)}
+.q .opts button.sel{background:#F3F7FD;border-color:var(--c-and)}
+.timer{font-variant-numeric:tabular-nums;font-weight:500;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+table.res{width:100%;border-collapse:collapse;font-size:.85rem}
+table.res th{font-weight:500;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+table.res th,table.res td{border-bottom:1px solid var(--line2);padding:9px 6px;text-align:left}
+footer{max-width:1040px;width:100%;margin:0 auto;padding:20px 32px 32px;color:var(--muted);font-size:.78rem;border-top:1px solid var(--line)}
+.sr{position:absolute;left:-9999px}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side" id="side" aria-label="Menu">
+  <div class="brand"><span class="logo" aria-hidden="true"></span><div><b>Nacionalidade</b><small>Guia para brasileiros</small></div></div>
+  <div class="navlabel">Menu</div>
+  <nav class="snav"><a href="#inicio" data-v="inicio"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Dashboard</span></a><a href="#instrucoes" data-v="instrucoes"><svg viewBox="0 0 24 24"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v18H5.5A2.5 2.5 0 0 1 3 18.5z"/><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H13v18h5.5a2.5 2.5 0 0 0 2.5-2.5z"/></svg><span>Instruções</span></a><a href="#plano" data-v="plano"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></svg><span>Meu plano</span></a><a href="#ccse" data-v="ccse"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5z"/><path d="M6 10.5V16c2 2 10 2 12 0v-5.5"/></svg><span>CCSE</span></a><a href="#dele" data-v="dele"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>DELE A2</span></a></nav>
+  <div class="side-foot">Guia independente e gratuito. Não oficial.<br>Revisado em nov/2026.</div>
+</aside>
+<div class="scrim" id="scrim"></div>
+<div class="mainwrap">
+<header class="mtop"><button id="menuBtn" aria-label="Abrir menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><span id="mTitle">Dashboard</span></header>
+<main>
+<div class="note red" id="avisoTopo"><b>Guia independente, não oficial.</b> Não substitui orientação jurídica. Consulte sempre os órgãos oficiais e, se tiver dúvidas sobre o seu caso, um advogado da área. Conteúdo revisado em novembro de 2026 e que não será atualizado.</div>
+<div class="note" id="semStorage" hidden>⚠️ Este navegador não está deixando salvar dados. O que você preencher pode se perder ao fechar a página. Tente outro navegador ou desative o modo privado.</div>
+
+<section class="view" id="v-inicio">
+  <div class="ph"><div><h1>Dashboard</h1><p>Visão geral da sua preparação</p></div></div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px"><div><div class="card-t" style="margin:0 0 4px">Progresso da preparação</div><div class="muted small">Mostra a sua preparação pessoal, não a chance de concessão. Ignora as tarefas “Não se aplica”.</div></div><span class="bigpct" id="pct">0%</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso" id="barW"><i id="bar"></i></div>
+  </div>
+
+  <div class="stats" id="cntStatus"></div>
+  <div class="stats" id="cntValid"></div>
+
+  <div class="g2" style="margin-bottom:20px">
+    <div class="card"><div class="card-t">Próximas ações</div><ul class="list" id="prox"></ul></div>
+    <div class="card"><div class="card-t">Prazos e vencimentos</div><ul class="list" id="prazos"></ul></div>
+  </div>
+  <div class="card"><div class="card-t">Estudos</div><div id="resEst" class="muted"></div></div>
+
+  <h2 class="sec">Identificação</h2>
+  <div class="card">
+    <div class="g2">
+      <div><label for="fNome">Primeiro nome</label><input type="text" id="fNome" autocomplete="given-name" placeholder="Ex.: Ana"><div class="hint">Usado para gerar o nome dos arquivos.</div></div>
+      <div><label for="fInicio">Início da residência legal na Espanha</label><input type="date" id="fInicio"><div class="hint">Data da primeira autorização de residência válida.</div></div>
+    </div>
+    <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline">
+      <div><div class="muted small">Data estimada para completar os 2 anos</div><div class="hint" style="margin:2px 0 0">Estimativa. A residência precisa ser legal, contínua e imediatamente anterior ao pedido.</div></div>
+      <div style="font-size:1.05rem;font-weight:500" id="dEst">Preencha a data de início</div>
+    </div>
+  </div>
+
+</section>
+<!-- ================= INSTRUÇÕES ================= -->
+<section class="view" id="v-instrucoes">
+  <div class="ph"><div><h1>Instruções</h1><p>Guia consultável por tema</p></div></div>
+  <input type="search" id="busca" placeholder="Buscar nas instruções (ex.: apostila, taxa, DNI)" aria-label="Buscar nas instruções" style="margin-bottom:12px">
+  <div id="insList"></div>
+  <p class="empty" id="insVazio" hidden>Nada encontrado. Tente outra palavra.</p>
+</section>
+
+<!-- ================= MEU PLANO ================= -->
+<section class="view" id="v-plano">
+  <div class="ph"><div><h1>Meu plano</h1><p>Tudo começa em “A fazer”. Clique em Abrir para ver instruções, datas e links.</p></div>
+    <div class="seg" role="group" aria-label="Visualização"><button id="vLista" class="on">Lista</button><button id="vKanban">Quadro</button></div>
+  </div>
+    <div class="toolbar">
+    <input type="search" id="pBusca" class="full" placeholder="Buscar tarefa" aria-label="Buscar tarefa">
+    <select id="pFase" aria-label="Filtrar por fase"></select>
+    <select id="pStatus" aria-label="Filtrar por status"></select>
+    <select id="pSit" aria-label="Filtrar por prazo e validade">
+      <option value="">Prazo/validade: todos</option>
+      <option value="vence">Vence em até 30 dias</option>
+      <option value="vencido">Vencido</option>
+      <option value="prazo">Prazo da ação próximo/vencido</option>
+    </select>
+  </div>
+  <div class="btns" style="margin:0 0 12px"><button data-act="limparFiltro" class="sm">Limpar filtros</button><button data-act="novaTarefa" class="sm">+ Tarefa pessoal</button><button data-act="excel" class="sm gold">⬇ Excel do plano</button></div>
+  <div id="pLista"></div>
+  <div id="pKanban" class="kanban" hidden></div>
+  <h2 class="sec">Salvar e recuperar o plano</h2>
+  <div class="card">
+    <p class="muted" style="margin:0">🔒 Os dados ficam só neste aparelho. <b>Baixar Excel</b> gera a planilha do seu plano para ver e imprimir. <b>Exportar backup</b> gera um arquivo para recuperar o plano em outro aparelho ou navegador.</p>
+    <div class="btns">
+      <button class="pri" data-act="excel">Baixar Excel do plano</button>
+      <button data-act="backup">Exportar backup</button>
+      <button data-act="importar">Importar backup</button>
+      <button class="danger" data-act="reset">Reiniciar tudo</button>
+    </div>
+    <input type="file" id="fileIn" accept=".json,application/json" class="sr" aria-label="Arquivo de backup">
+  </div>
+</section>
+
+<!-- ================= CCSE ================= -->
+<section class="view" id="v-ccse">
+  <div class="ph"><div><h1>CCSE</h1><p>Conhecimentos Constitucionais e Socioculturais da Espanha</p></div></div>
+  <details class="ins" open><summary>Sobre a prova</summary><div class="b">
+    <ul class="plain">
+      <li>Prova do Instituto Cervantes exigida de quem pede a nacionalidade por residência.</li>
+      <li><b>25 questões</b> em 5 tarefas, <b>45 minutos</b>, aprovação com <b>15 acertos</b> (60%). Referência a conferir no site oficial.</li>
+      <li>Parte 1 — Governo, legislação e participação cidadã (15 questões). Parte 2 — Cultura, história e sociedade (10 questões).</li>
+      <li>O certificado vale <b>4 anos</b> desde a aprovação da ata de qualificação.</li>
+      <li>A inscrição é feita online, usando o seu <b>NIE</b>.</li>
+    </ul>
+    <p class="links"><a href="https://cervantes.org/es/examenes/ccse" target="_blank" rel="noopener">Página oficial do CCSE ↗</a></p>
+    <p class="hint">O manual oficial e o banco de perguntas do ano estão no site do Instituto Cervantes. Estude por eles.</p>
+  </div></details>
+  <div class="note"><b>Questões de treino, não oficiais.</b> As perguntas abaixo foram escritas para este guia. Não são do banco oficial do Instituto Cervantes e o resultado <b>não é aprovação oficial</b>.</div>
+  <div class="card">
+    <div class="card-t">Escolha como treinar</div>
+    <div class="g2" style="margin-top:8px">
+      <div><label for="cTema">Modo estudo — tema</label><select id="cTema"></select><div class="btns"><button class="pri" data-act="estudo">Começar estudo</button></div><div class="hint">Mostra a resposta comentada na hora.</div></div>
+      <div><label>Simulado cronometrado</label><p class="muted" style="margin:0">25 questões, 45 minutos, corte de 15 acertos.</p><div class="btns"><button class="pri" data-act="simulado">Começar simulado</button></div></div>
+    </div>
+  </div>
+  <div id="cArea"></div>
+  <div class="card"><div class="card-t">Histórico de simulados</div><div id="cHist" class="muted" style="margin-top:6px"></div></div>
+</section>
+
+<!-- ================= DELE ================= -->
+<section class="view" id="v-dele">
+  <div class="ph"><div><h1>DELE A2</h1><p>Diploma de Español como Lengua Extranjera</p></div></div>
+  <details class="ins" open><summary>Por que é obrigatório</summary><div class="b">
+    <p>Para brasileiros, o DELE <b>A2 ou superior</b> é exigido porque o espanhol não é língua oficial no Brasil. O nível A1 não serve para a nacionalidade. O diploma DELE <b>não tem data de validade</b>.</p>
+    <p class="links"><a href="https://cervantes.org/es/examenes/dele" target="_blank" rel="noopener">Página oficial do DELE ↗</a></p>
+  </div></details>
+  <details class="ins"><summary>Estrutura da prova (referência a conferir na guia oficial)</summary><div class="b">
+    <ul class="plain">
+      <li><b>Compreensão de leitura</b> — 60 minutos — 25 pontos</li>
+      <li><b>Compreensão auditiva</b> — 40 minutos — 25 pontos</li>
+      <li><b>Expressão e interação escritas</b> — 45 minutos — 25 pontos</li>
+      <li><b>Expressão e interação orais</b> — 12 minutos + 12 de preparação — 25 pontos</li>
+    </ul>
+  </div></details>
+  <details class="ins"><summary>Como funciona a aprovação</summary><div class="b">
+    <p>As 4 provas formam <b>2 grupos</b>. Você precisa de pelo menos <b>30 de 50 pontos em cada grupo</b>. Não basta a média geral.</p>
+    <ul class="plain">
+      <li><b>Grupo 1:</b> leitura + expressão escrita</li>
+      <li><b>Grupo 2:</b> auditiva + expressão oral</li>
+    </ul>
+    <p class="hint">Exemplo: 74 pontos no total, mas 28 no Grupo 2 → “No apto”.</p>
+  </div></details>
+  <details class="ins"><summary>Inscrição e materiais</summary><div class="b">
+    <ul class="plain">
+      <li>Escolha a data e o centro de exame no site do Instituto Cervantes.</li>
+      <li>Baixe o <b>modelo de exame</b> oficial do A2 e faça em tempo real.</li>
+      <li>Treine a parte oral com alguém: apresentar-se, descrever uma foto e simular um diálogo do dia a dia.</li>
+    </ul>
+    <p style="margin-top:14px"><b>Livros de preparação (sugestões)</b></p>
+    <ul class="plain">
+      <li><b>Preparación al DELE A2</b> — Editorial Edelsa (nova edição). <a href="https://amzn.eu/d/02DfnoNV" target="_blank" rel="noopener">Ver na Amazon ↗</a><br><span class="hint">As soluções e as transcrições dos áudios ficam num livro de “Claves” separado. Também existe o pack Livro + Claves (ISBN 978-84-9081-723-0).</span></li>
+      <li><b>Crono A2 — Manual de preparación del DELE</b> — Editorial Edinumen, coleção El Cronómetro.<br><span class="hint">ISBN 978-84-9179-442-4. Existe pack com o caderno de soluções (ISBN 978-84-9179-597-1).</span></li>
+      <li><b>Las claves del DELE A2 — Edición actualizada</b> — Editorial Difusión.<br><span class="hint">Atualizado para o formato da prova vigente desde 2020, com 5 modelos de exame.</span></li>
+    </ul>
+    <p class="hint">Sugestões independentes, sem patrocínio. Para os livros sem link, procure pelo título ou ISBN em qualquer livraria. Prefira edições adaptadas ao formato de 2020 e com soluções.</p>
+    <p class="links"><a href="https://cervantes.org/es/examenes/dele" target="_blank" rel="noopener">Datas, inscrição e materiais ↗</a></p>
+  </div></details>
+  <h2 class="sec">Simulado de leitura</h2>
+  <div class="card">
+    <p class="muted" style="margin:0">6 textos sorteados, 24 perguntas, <b>60 minutos</b> (tempo da prova de leitura). No fim: acertos, nota estimada da leitura (de 25) e quanto faltaria na escrita para chegar aos 30 pontos do Grupo 1.</p>
+    <div class="btns"><button class="pri" data-act="dSim">Começar simulado de leitura</button></div>
+    <p class="hint">Mostra só a leitura. O DELE completo também avalia compreensão auditiva, escrita e fala, que este site não corrige.</p>
+  </div>
+  <div id="dSimArea"></div>
+  <div class="card"><div class="card-t">Histórico de simulados de leitura</div><div id="dHist" class="muted"></div></div>
+  <h2 class="sec">Treine texto aqui</h2>
+  <div class="card">
+    <label for="dTxt">Escolha o texto</label>
+    <select id="dTxt"></select>
+    <div class="btns"><button class="pri" data-act="dTreino">Começar treino</button></div>
+    <p class="hint">Uma pergunta por vez, com a correção na hora. Sem cronômetro.</p>
+  </div>
+  <div class="note"><b>Exercícios originais, não oficiais.</b> Escritos para este guia, no estilo do nível A2.</div>
+  <div id="dArea"></div>
+</section>
+
+
+</main>
+<footer>Guia de organização independente, feito por brasileiros para brasileiros. Não é um site oficial e não substitui orientação jurídica. Consulte sempre os órgãos oficiais e, se tiver dúvidas sobre o seu caso, um advogado da área. Conteúdo revisado em novembro de 2026 e que não será atualizado.</footer>
+</div></div>
+
+<div class="dlg-bg" id="dlg"><div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgT"><button class="sm x" data-act="fechar" aria-label="Fechar">✕</button><h3 id="dlgT" style="margin-top:4px"></h3><div id="dlgB"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+/* ======================= DADOS FIXOS ======================= */
+var L={
+ cc:["Código Civil (arts. 21 a 23)","https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763"],
+ orden:["Orden JUS/1625/2016 (procedimento e documentos)","https://www.boe.es/eli/es/o/2016/09/30/jus1625"],
+ portal:["Portal da nacionalidade (Ministerio de Justicia)","https://sede.mjusticia.gob.es/tramites/nacionalidad-espanola"],
+ legal:["Advertência oficial sobre legalização e apostila","https://sede.mjusticia.gob.es/documents/d/guest/advertencia-legalizaciones"],
+ taxa:["Formulário da taxa 790-026","https://sede.mjusticia.gob.es/enares790?idpagina=1215197884559&idtramite=1288776962092&lang=es_es"],
+ cons:["Consulta do expediente","https://sede.mjusticia.gob.es/eConsultas/inicioNacionalidad?idpagina=1215197884559&idtramite=1215326299080&lang=es_es"],
+ antEs:["Antecedentes penais da Espanha","https://sede.mjusticia.gob.es/tramites/certificado-antecedentes"],
+ fnmt:["Certificado digital FNMT","https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/"],
+ rc:["Certidões brasileiras (portal dos cartórios, não é site do governo)","https://www.registrocivil.org.br/"],
+ pf:["Antecedentes da Polícia Federal","https://www.gov.br/pf/pt-br/assuntos/antecedentes-criminais/"],
+ apost:["Apostila (CNJ) — busca de cartórios autorizados","https://www.cnj.jus.br/poder-judiciario/relacoes-internacionais/apostila-da-haia/"],
+ trad:["Tradutores juramentados (MAEC)","https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Traductores-Interpretes-Jurados.aspx"],
+ ccse:["CCSE — Instituto Cervantes","https://cervantes.org/es/examenes/ccse"],
+ dele:["DELE — Instituto Cervantes","https://cervantes.org/es/examenes/dele"],
+ dni:["Primeiro DNI (Polícia Nacional)","https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?id_menu=7&pag=REF_410"],
+ pass:["Passaporte espanhol (Polícia Nacional)","https://sede.policia.gob.es/portalCiudadano/_es/tramites_ciudadania_pasaporte.php/index.php"],
+ madrid:["Exemplo: certificado de empadronamiento em Madrid","https://sede.madrid.es/portal/site/tramites"],
+ segsoc:["Vida laboral (Seguridad Social — Importass)","https://portal.seg-social.gob.es/wps/portal/importass/importass"],
+ aeat:["Agencia Tributaria (IRPF)","https://sede.agenciatributaria.gob.es/"]
+};
+var FASES=[[1,"Enquadramento e preparação"],[2,"Provas e certificados"],[3,"Documentos"],[4,"Revisão e apresentação"],[5,"Acompanhamento"],[6,"Pós-concessão"]];
+var STATUS=[["fazer","A fazer"],["and","Em andamento"],["pend","Pendente"],["conc","Concluída"],["na","Não se aplica"]];
+var ST={};STATUS.forEach(function(s){ST[s[0]]=s[1];});
+var MOTIVOS=[["","Escolha o motivo"],["terceiro","Aguardando terceiro"],["orgao","Aguardando órgão público"],["faltante","Documento faltante"],["outro","Outro"]];
+var MOT={};MOTIVOS.forEach(function(m){MOT[m[0]]=m[1];});
+
+/* doc: sufixo do nome do arquivo | dl: rótulo da data de emissão | calc: regra comprovada */
+var TASKS=[
+ {id:"enq",f:1,c:"Elegibilidade",t:"Verificar se o prazo de 2 anos se aplica a você",como:"Confira se você é brasileiro de origem, adulto, e se tem 2 anos de residência legal, contínua e imediatamente anterior ao pedido. Presença na Espanha e empadronamiento, sozinhos, não comprovam residência legal. Autorização de estudos não deve ser tratada automaticamente como residência computável.",subs:["Conferir a data da primeira autorização de residência","Conferir se houve interrupções ou longas ausências","Conferir se o caso não é de menor, representação, refúgio ou outra modalidade"],links:["cc","portal"],val:"Os requisitos precisam estar cumpridos na data em que o pedido é apresentado."},
+ {id:"cert",f:1,c:"Acesso eletrônico",t:"Certificado digital FNMT e AutoFirma",como:"Siga as 4 etapas da FNMT: configurar o computador, pedir online, confirmar a identidade (presencial ou vídeo) e baixar o certificado. Depois instale o AutoFirma, usado para assinar o pedido.",subs:["Configuração prévia","Solicitação online","Confirmação de identidade","Download e cópia de segurança","Instalar o AutoFirma"],links:["fnmt","portal"],val:"Precisa estar válido no dia da assinatura do pedido."},
+ {id:"dele",f:2,c:"Prova",t:"Certificado DELE A2 (ou superior)",como:"Escolha data e centro, inscreva-se com o NIE, faça a prova e baixe o certificado quando sair o resultado. No pedido, você pode autorizar a consulta direta ao Instituto Cervantes.",subs:["Inscrição","Prova realizada","Resultado “Apto”","Certificado baixado"],links:["dele"],doc:"CertificadoDELE",dl:"Data do certificado",val:"Diploma DELE: sem data de validade."},
+ {id:"ccse",f:2,c:"Prova",t:"Certificado CCSE",como:"Inscreva-se com o NIE, faça a prova e baixe o certificado. Confira se ele ainda estará válido quando você enviar o pedido.",subs:["Inscrição","Prova realizada","Resultado “Apto”","Certificado baixado"],links:["ccse"],doc:"CertificadoCCSE",dl:"Aprovação da ata",val:"4 anos desde a aprovação da ata de qualificação.",calc:{base:"emissao",tgt:"venc",y:4,txt:"aprovação da ata + 4 anos"}},
+ {id:"tie",f:3,c:"Documento espanhol",t:"TIE (frente e verso)",como:"Confira dados e validade e escaneie frente e verso em cores, num PDF só. Se estiver renovando, guarde o comprovante da renovação.",subs:["Conferir dados e validade","Escanear frente e verso"],links:["orden"],doc:"TIE",dl:"Data de emissão",val:"Use a data de validade impressa no cartão. Precisa estar vigente no pedido."},
+ {id:"pas",f:3,c:"Documento brasileiro",t:"Passaporte brasileiro completo",como:"Confira a validade e escaneie todas as páginas, inclusive as em branco, num PDF legível.",subs:["Conferir validade","Escanear todas as páginas"],links:["orden"],doc:"Pasaporte",dl:"Data de emissão",val:"Use a data de validade impressa. Precisa estar vigente no pedido."},
+ {id:"nasc",f:3,c:"Documento brasileiro",t:"Certidão de nascimento",como:"Peça a certidão de inteiro teor atualizada, confira nomes e filiação, apostile no Brasil e faça a tradução juramentada do documento e da apostila.",subs:["Solicitar inteiro teor atualizada","Apostilar","Tradução juramentada (documento + apostila)","Conferir nomes, filiação e datas"],links:["rc","apost","trad","legal"],doc:"CertidaoNascimento",dl:"Data de emissão",val:"Não há prazo universal. Confira a exigência no procedimento; não aplique 6 meses automaticamente."},
+ {id:"pf",f:3,c:"Documento brasileiro",t:"Antecedentes criminais do Brasil (Polícia Federal)",como:"Emita grátis no site da PF, valide a autenticidade, apostile e faça a tradução juramentada. Peça perto da data do envio, porque vence rápido.",subs:["Emitir na PF","Validar autenticidade","Apostilar","Tradução juramentada (documento + apostila)"],links:["pf","apost","trad"],doc:"AntecedentesPenalesBrasil",dl:"Data de emissão",val:"90 dias desde a emissão (informado pela própria PF).",calc:{base:"emissao",tgt:"venc",d:90,txt:"emissão + 90 dias"}},
+ {id:"cas",f:3,c:"Documento brasileiro",cond:"Só para quem é casado. Se não for, marque “Não se aplica”.",t:"Certidão de casamento",como:"Peça a certidão de inteiro teor atualizada, confira nomes e estado civil, apostile e faça a tradução juramentada.",subs:["Solicitar inteiro teor atualizada","Apostilar","Tradução juramentada (documento + apostila)","Conferir nomes e estado civil"],links:["rc","apost","trad"],doc:"CertidaoCasamento",dl:"Data de emissão",val:"Não há prazo universal. Confira a exigência do seu caso."},
+ {id:"antes",f:3,c:"Documento espanhol",cond:"Pode ser substituído pela autorização de consulta no próprio formulário do pedido. Se usar essa opção, marque “Não se aplica”.",t:"Antecedentes penais da Espanha ou consulta autorizada",como:"No formulário, você pode autorizar o Ministério a consultar o Registro Central de Penados. Se preferir emitir, faça online na sede da Justiça. Confira antes se há divergência de nome ou NIE.",subs:["Decidir: consulta autorizada ou certificado","Emitir certificado (se necessário)"],links:["antEs","portal"],doc:"AntecedentesPenalesEspana",dl:"Data de emissão",val:"Sem validade fixa. Precisa ser adequado à data do pedido."},
+ {id:"padron",f:3,c:"Documento espanhol",cond:"Pode ser substituído pela autorização de consulta no formulário. Se usar essa opção, marque “Não se aplica”.",t:"Empadronamiento ou consulta autorizada",como:"Se for apresentar o certificado, peça no Ayuntamiento (prefeitura) do seu município, normalmente online. O link de Madrid é só um exemplo.",subs:["Decidir: consulta autorizada ou certificado","Emitir certificado (se necessário)"],links:["madrid","portal"],doc:"CertificadoEmpadronamiento",dl:"Data de emissão",val:"Sem prazo universal para a nacionalidade. Confira a exigência do procedimento."},
+ {id:"econ",f:3,c:"Complementar",cond:"Não é exigência para todos. Reúna só se for pertinente ao seu caso ou se for pedido. Se não, marque “Não se aplica”.",t:"Documentos econômicos e trabalhistas (se necessários)",como:"Exemplos: vida laboral, contrato, nóminas, IRPF, extratos. Anote nas observações quais documentos e por quê.",subs:["Identificar o que é pedido","Reunir os documentos"],links:["segsoc","aeat"],val:"Período e atualidade conforme a exigência concreta. Não há prazo universal."},
+ {id:"taxa",f:3,c:"Taxa",t:"Taxa 790-026",como:"Gere o formulário oficial em seu nome, confira o valor (104,05 € — confira o valor atualizado no site oficial), pague e guarde o formulário e o comprovante. Não reutilize formulário de outra pessoa.",subs:["Gerar o formulário","Conferir valor e dados","Pagar","Guardar comprovante em PDF"],links:["taxa"],doc:"Tasa790026",dl:"Data do pagamento",val:"Pagar antes do envio. Guardar sempre o comprovante."},
+ {id:"rev",f:4,c:"Revisão",t:"Revisar e organizar todos os documentos",como:"Confira nomes, filiação, datas, estado civil, apostilas e traduções. Confira a validade no dia do envio e nomeie os PDFs com os nomes sugeridos.",subs:["Nomes e filiação","Datas e estado civil","Apostilas e traduções","Validades no dia do envio","PDFs renomeados numa pasta"],links:["portal"],val:"Antes de apresentar. Repita se houver atraso."},
+ {id:"ped",f:4,c:"Apresentação",t:"Preencher o pedido e anexar documentos",como:"Entre no portal com o certificado digital, preencha os dados, marque as consultas autorizadas e anexe os documentos. Atenção: o rascunho é apagado após 2 meses sem assinar e enviar.",subs:["Rascunho criado","Dados preenchidos","Consultas autorizadas marcadas","Documentos anexados"],links:["portal"],dl:"Criação do rascunho",dates:true,val:"Rascunho apagado 2 meses após a criação, se não for enviado.",calc:{base:"emissao",tgt:"prazo",m:2,txt:"criação do rascunho + 2 meses"}},
+ {id:"env",f:4,c:"Apresentação",t:"Assinar, enviar e guardar o comprovante",como:"Depois da revisão final, assine e envie. Baixe o comprovante com data, hora e número de registro e anote o número do expediente nas observações. Rascunho salvo não é pedido enviado.",subs:["Assinado e enviado","Comprovante baixado","Número do expediente anotado"],links:["portal"],val:"Dentro do prazo do rascunho e com documentos válidos."},
+ {id:"acomp",f:5,c:"Acompanhamento",t:"Acompanhar o expediente e as notificações",como:"Consulte o andamento online. A consulta não é notificação oficial: acompanhe também os canais de notificação (como a DEHú, quando aplicável) e mantenha seus dados atualizados.",subs:["Consulta online configurada","Canal de notificações conferido"],links:["cons","portal"],val:"Contínuo, até a resolução."},
+ {id:"exig",f:5,c:"Acompanhamento",cond:"Só se receber uma exigência (requerimiento). Se não receber, marque “Não se aplica”.",t:"Responder exigências (requerimientos)",como:"Anote a data, o prazo e os documentos pedidos. Responda pelo canal indicado e guarde o comprovante. Para várias exigências, crie tarefas pessoais.",subs:["Prazo anotado","Documentos reunidos","Resposta enviada","Comprovante guardado"],links:["portal"],val:"Use o prazo da notificação no campo “Prazo da ação”."},
+ {id:"res",f:5,c:"Acompanhamento",t:"Receber e conferir a resolução",como:"Baixe a resolução. Em “Data de conclusão”, coloque a data da notificação: ela é usada para calcular o prazo da jura. Se for desfavorável, procure orientação sobre recurso.",subs:["Resolução baixada","Data da notificação anotada"],links:["portal"],val:"A data de notificação inicia o prazo de 180 dias da jura."},
+ {id:"jura",f:6,c:"Pós-concessão",t:"Jura ou promessa",como:"Agende no Registro Civil competente (ou via notarial admitida), leve os documentos pedidos e cumpra as formalidades do art. 23 do Código Civil. Agendar não basta: é preciso comparecer dentro do prazo.",subs:["Agendado","Documentos conferidos","Jura realizada"],links:["cc"],val:"180 dias contados da notificação da concessão (art. 21.4 do Código Civil).",calc:{fromTask:"res",base:"conclusao",tgt:"prazo",d:180,txt:"notificação da concessão + 180 dias"}},
+ {id:"reg",f:6,c:"Pós-concessão",t:"Inscrição no Registro Civil e certidão para o DNI",como:"Confirme a inscrição da nacionalidade no Registro Civil e peça a certidão literal de nascimento espanhola específica para a primeira emissão do DNI.",subs:["Inscrição confirmada","Certidão para DNI emitida","Dados conferidos"],links:["dni"],doc:"CertidaoNacimientoEspanola",dl:"Data de emissão",val:"Para o primeiro DNI: emitida há no máximo 6 meses.",calc:{base:"emissao",tgt:"venc",m:6,txt:"emissão + 6 meses (uso para o DNI)"}},
+ {id:"padDni",f:6,c:"Pós-concessão",t:"Empadronamiento para o primeiro DNI",como:"Peça o certificado ou volante de empadronamiento no Ayuntamiento do seu município.",subs:["Certificado emitido"],links:["dni","madrid"],doc:"EmpadronamientoDNI",dl:"Data de emissão",val:"Para o DNI: emitido há no máximo 3 meses.",calc:{base:"emissao",tgt:"venc",m:3,txt:"emissão + 3 meses (uso para o DNI)"}},
+ {id:"dniT",f:6,c:"Pós-concessão",t:"DNI espanhol",como:"Siga as orientações de primeira inscrição da Polícia Nacional. Leve a certidão espanhola, o empadronamiento, foto atual, a TIE e a taxa vigente.",subs:["Cita marcada","Documentos reunidos","DNI emitido e conferido"],links:["dni"],val:"Na data do atendimento, os documentos precisam respeitar as validades exigidas."},
+ {id:"passES",f:6,c:"Pós-concessão",cond:"Opcional: só se você quiser o passaporte espanhol.",t:"Passaporte espanhol",como:"Confira os requisitos no site da Polícia, agende e leve o DNI, foto e a taxa vigente.",subs:["Cita marcada","Passaporte emitido"],links:["pass"],val:"Conforme o documento emitido."}
+];
+TASKS.forEach(function(t,i){t.n=i+1;});
+var TMAP={};TASKS.forEach(function(t){TMAP[t.id]=t;});
+
+/* ---------- Instruções ---------- */
+function lk(k){return '<a href="'+L[k][1]+'" target="_blank" rel="noopener">'+L[k][0]+' ↗</a>';}
+var INS=[
+ ["Quem pode usar o prazo de 2 anos",'<ul class="plain"><li>Brasileiros <b>de origem</b> podem pedir com <b>2 anos</b> de residência, porque o Brasil é um país ibero-americano (art. 22 do Código Civil).</li><li>A residência precisa ser <b>legal, contínua e imediatamente anterior</b> ao pedido.</li><li>Também é preciso mostrar boa conduta cívica e integração na sociedade espanhola.</li><li>Este guia é para <b>adultos pedindo para si mesmos</b>.</li></ul><p class="links">'+lk("cc")+'</p>'],
+ ["Presença, empadronamiento e residência legal",'<ul class="plain"><li><b>Presença:</b> estar fisicamente na Espanha. Sozinha, não conta.</li><li><b>Empadronamiento:</b> inscrição no padrão do Ayuntamiento. Mostra onde você mora, mas <b>não comprova residência legal</b>.</li><li><b>Residência legal:</b> ter autorização de residência válida (TIE). É ela que conta para os 2 anos.</li><li>Autorização de <b>estudos</b> não deve ser tratada automaticamente como residência computável. Se for o seu caso, procure orientação.</li></ul>'],
+ ["Visão geral das etapas",'<ol class="plain"><li><b>Enquadramento e preparação:</b> conferir se o prazo se aplica e obter o certificado digital.</li><li><b>Provas:</b> DELE A2 e CCSE.</li><li><b>Documentos:</b> brasileiros (com apostila e tradução) e espanhóis, mais a taxa.</li><li><b>Revisão e apresentação:</b> conferir tudo, preencher, assinar e enviar online.</li><li><b>Acompanhamento:</b> consultar o expediente e responder exigências.</li><li><b>Pós-concessão:</b> jura, registro, DNI e passaporte.</li></ol>'],
+ ["Documentos brasileiros e espanhóis",'<p><b>Brasileiros</b> (precisam de apostila e tradução juramentada):</p><ul class="plain"><li>Certidão de nascimento de inteiro teor</li><li>Antecedentes criminais da Polícia Federal</li><li>Certidão de casamento (só se casado)</li><li>Passaporte completo (só escaneado)</li></ul><p><b>Espanhóis:</b></p><ul class="plain"><li>TIE</li><li>Antecedentes penais da Espanha e empadronamiento (podem ser substituídos pela autorização de consulta no formulário)</li><li>Certificados DELE e CCSE (também podem ser consultados com autorização)</li><li>Comprovante da taxa 790-026</li></ul><p class="links">'+lk("orden")+'</p>'],
+ ["Apostila de Haia",'<ul class="plain"><li>A apostila é o selo que dá validade internacional a um documento público brasileiro.</li><li>É feita em <b>cartório autorizado</b> no Brasil, depois de emitir o documento.</li><li>A apostila <b>não renova</b> a validade do documento.</li><li>A tradução juramentada deve incluir o documento <b>e a apostila</b>.</li></ul><p class="links">'+lk("apost")+lk("legal")+'</p>'],
+ ["Tradução juramentada",'<ul class="plain"><li>Use um <b>tradutor jurado</b> nomeado pelo Ministério de Assuntos Exteriores da Espanha (MAEC).</li><li>No site do MAEC, abra o buscador de tradutores, selecione o idioma <b>“Portugués”</b> e procure por <b>“Traductor jurado”</b> ou <b>“Traductor-intérprete jurado”</b>.</li><li>A contratação é feita <b>direto com o profissional</b>: peça orçamento e prazo.</li><li>O tradutor jurado <b>não é advogado</b> e não dá orientação jurídica.</li></ul><p class="links">'+lk("trad")+'</p>'],
+ ["Certificado digital e AutoFirma",'<ul class="plain"><li>O pedido é feito online e precisa de identificação eletrônica, como o <b>certificado digital da FNMT</b> (gratuito).</li><li>Etapas: configurar o computador → pedir online → confirmar a identidade (presencial ou vídeo) → baixar e fazer cópia de segurança.</li><li>Instale também o <b>AutoFirma</b>, usado para assinar o pedido.</li></ul><p class="links">'+lk("fnmt")+'</p>'],
+ ["DELE A2 e CCSE",'<ul class="plain"><li>Brasileiros precisam dos <b>dois</b> exames.</li><li><b>DELE A2:</b> prova de espanhol. O diploma não vence.</li><li><b>CCSE:</b> prova sobre Constituição e sociedade espanhola. Vale 4 anos.</li><li>Quem tem o título da ESO espanhola pode ter regras diferentes. Qualquer <b>dispensa</b> precisa ser pedida e resolvida <b>antes</b> do pedido de nacionalidade.</li></ul><p>Veja as abas <b>CCSE</b> e <b>DELE A2</b> para estudar.</p>'],
+ ["Taxa 790-026",'<ul class="plain"><li>Valor: <b>104,05 €</b> (confira o valor atualizado no site oficial).</li><li>Gere o formulário <b>em seu nome</b>: cada formulário tem um código único. Não use cópia de outra pessoa.</li><li>Pague <b>antes</b> de enviar o pedido e guarde o comprovante em PDF.</li></ul><p class="links">'+lk("taxa")+'</p>'],
+ ["Apresentação eletrônica do pedido",'<ul class="plain"><li>Entre no portal com o certificado digital ou Cl@ve.</li><li>Preencha os dados, marque as consultas autorizadas e anexe os documentos.</li><li><b>Atenção:</b> o rascunho é <b>apagado após 2 meses</b> se você não assinar e enviar.</li><li>Rascunho salvo <b>não é</b> pedido enviado. Só vale depois de “Firmar y enviar”.</li></ul><p class="links">'+lk("portal")+'</p>'],
+ ["Protocolo, notificações e exigências",'<ul class="plain"><li>Depois de enviar, guarde o comprovante e o número do expediente.</li><li>A consulta de andamento online <b>não é</b> notificação oficial.</li><li>Se receber um <b>requerimiento</b>, anote o prazo, responda pelo canal indicado e guarde o comprovante.</li><li>Comunique mudanças de endereço.</li></ul><p class="links">'+lk("cons")+'</p>'],
+ ["Concessão e jura",'<ul class="plain"><li>Se a resolução for favorável, você tem <b>180 dias</b> desde a notificação para comparecer e fazer a jura ou promessa (art. 21.4 do Código Civil).</li><li>A jura é feita no Registro Civil competente ou por via notarial admitida.</li><li>Agendar não basta: é preciso cumprir as formalidades dentro do prazo.</li><li>Pelo art. 23, nacionais de países ibero-americanos não precisam renunciar à nacionalidade anterior (confirmar no site oficial).</li></ul><p class="links">'+lk("cc")+'</p>'],
+ ["Registro Civil, DNI e passaporte",'<ul class="plain"><li>Depois da jura, confirme a inscrição no Registro Civil.</li><li>Para o primeiro DNI: certidão literal espanhola emitida há no máximo <b>6 meses</b> e empadronamiento há no máximo <b>3 meses</b>.</li><li>Leve também foto atual e a TIE.</li><li>O passaporte espanhol vem depois do DNI.</li></ul><p class="links">'+lk("dni")+lk("pass")+'</p>'],
+ ["Situações fora deste guia",'<p>Este guia <b>não serve</b> para:</p><ul class="plain"><li>Menores de idade ou pedidos feitos por representante</li><li>Refugiados</li><li>Casados com espanhol(a), viúvos, descendentes de espanhóis, nascidos na Espanha</li><li>Pessoas com medidas de apoio à capacidade jurídica</li><li>Outras formas de adquirir a nacionalidade</li></ul><p>Nesses casos, procure orientação de um advogado da área ou dos órgãos oficiais.</p>'],
+ ["Perguntas frequentes",'<p><b>O progresso deste site mostra o andamento do meu processo?</b><br>Não. Ele mostra só a sua organização pessoal. O andamento oficial está na consulta do expediente.</p><p><b>Meus dados vão para algum lugar?</b><br>Não. Ficam só neste navegador. Faça backup para não perder.</p><p><b>As questões do CCSE são oficiais?</b><br>Não. São de treino, escritas para este guia. Estude pelo material oficial do Instituto Cervantes.</p><p><b>O conteúdo está atualizado?</b><br>Foi revisado em novembro de 2026 e não será atualizado. Confira sempre nos sites oficiais.</p>']
+];
+
+/* ---------- CCSE: questões originais de treino ---------- */
+var TEMAS=[[1,"Governo, legislação e participação"],[2,"Direitos e deveres"],[3,"Organização territorial e geografia"],[4,"Cultura e história"],[5,"Sociedade espanhola"]];
+var DIST={1:10,2:3,3:2,4:3,5:7};
+var QS=[
+ [1,"¿Qué forma política tiene el Estado español según la Constitución?",["República federal","Monarquía parlamentaria","Monarquía absoluta"],1,"Art. 1.3 da Constituição: a forma política do Estado é a monarquia parlamentar."],
+ [1,"¿En qué año se aprobó la Constitución española vigente?",["1975","1978","1982"],1,"A Constituição foi aprovada em referendo em 1978."],
+ [1,"¿Cómo se llama el conjunto formado por el Congreso de los Diputados y el Senado?",["Cortes Generales","Consejo de Ministros","Tribunal Supremo"],0,"As Cortes Generales são o parlamento: Congresso + Senado."],
+ [1,"¿Quién es el Jefe del Estado en España?",["El Presidente del Gobierno","El Rey","El Presidente del Congreso"],1,"Art. 56: o Rei é o Chefe do Estado."],
+ [1,"Como regla general, ¿cada cuántos años se celebran elecciones generales?",["Cada 4 años","Cada 5 años","Cada 6 años"],0,"A legislatura dura, em regra, quatro anos."],
+ [1,"¿A partir de qué edad se puede votar en las elecciones generales?",["16 años","18 años","21 años"],1,"O direito de voto começa aos 18 anos, a maioridade."],
+ [1,"¿Qué órgano interpreta la Constitución y resuelve los recursos de inconstitucionalidad?",["El Tribunal Supremo","El Tribunal Constitucional","El Consejo de Estado"],1,"O Tribunal Constitucional é o intérprete supremo da Constituição."],
+ [1,"¿Qué cámara vota la investidura del Presidente del Gobierno?",["El Senado","El Congreso de los Diputados","El Tribunal Constitucional"],1,"Art. 99: o candidato é proposto pelo Rei e precisa da confiança do Congresso."],
+ [1,"¿Qué institución defiende los derechos de los ciudadanos ante la Administración?",["El Defensor del Pueblo","El Tribunal de Cuentas","La Audiencia Nacional"],0,"O Defensor del Pueblo protege os direitos fundamentais diante da Administração."],
+ [1,"¿Qué poder del Estado aprueba las leyes?",["El poder ejecutivo","El poder legislativo","El poder judicial"],1,"As Cortes Generales exercem o poder legislativo."],
+ [1,"¿Cómo se llama el órgano de gobierno del Poder Judicial?",["Consejo General del Poder Judicial","Consejo de Ministros","Defensor del Pueblo"],0,"O CGPJ é o órgão de governo do Poder Judicial."],
+ [1,"¿Cuál es la lengua oficial del Estado español?",["El castellano","El catalán","El inglés"],0,"Art. 3: o castelhano é a língua oficial do Estado. Outras línguas são cooficiais em suas comunidades."],
+ [1,"¿Cuántos diputados forman el Congreso de los Diputados?",["250","350","450"],1,"O Congresso tem 350 deputados."],
+ [1,"¿Quién dirige el Gobierno de España?",["El Rey","El Presidente del Gobierno","El Presidente del Senado"],1,"Art. 98: o Presidente dirige a ação do Governo."],
+ [2,"Según la Constitución, ¿a qué edad son mayores de edad los españoles?",["16 años","18 años","21 años"],1,"Art. 12: os espanhóis são maiores de idade aos 18 anos."],
+ [2,"¿Es obligatoria y gratuita la enseñanza básica?",["Sí","No, es voluntaria","Solo es gratuita para españoles"],0,"Art. 27.4: o ensino básico é obrigatório e gratuito."],
+ [2,"¿Qué deber tienen los españoles respecto al castellano?",["El deber de conocerlo","El deber de enseñarlo","Ninguno"],0,"Art. 3.1: todos os espanhóis têm o dever de conhecer o castelhano e o direito de usá-lo."],
+ [2,"¿Quién debe contribuir al sostenimiento de los gastos públicos?",["Solo las empresas","Todos, según su capacidad económica","Solo los funcionarios"],1,"Art. 31: todos contribuem de acordo com a sua capacidade econômica."],
+ [2,"¿Tiene España una religión oficial del Estado?",["Sí, la católica","No, ninguna confesión tiene carácter estatal","Sí, varias"],1,"Art. 16.3: nenhuma confissão tem caráter estatal."],
+ [2,"Los españoles son iguales ante la ley, sin discriminación por…",["nacimiento, raza, sexo, religión u opinión","solo por nacionalidad","la Constitución no lo dice"],0,"Art. 14: igualdade perante a lei, sem discriminação."],
+ [3,"¿Cuántas comunidades autónomas hay en España?",["15","17","19"],1,"São 17 comunidades autônomas, além de 2 cidades autônomas."],
+ [3,"¿Cuáles son las dos ciudades autónomas de España?",["Ceuta y Melilla","Cádiz y Málaga","Ibiza y Menorca"],0,"Ceuta e Melilla, no norte da África."],
+ [3,"¿Cuál es la capital de España?",["Barcelona","Madrid","Sevilla"],1,"Art. 5: a capital é a vila de Madrid."],
+ [3,"¿Qué río pasa por Zaragoza?",["El Ebro","El Tajo","El Guadalquivir"],0,"O Ebro atravessa Zaragoza."],
+ [3,"¿Qué río pasa por Sevilla?",["El Duero","El Guadalquivir","El Miño"],1,"O Guadalquivir atravessa Sevilla."],
+ [3,"¿En qué océano están las Islas Canarias?",["En el Atlántico","En el Mediterráneo","En el Índico"],0,"As Canárias ficam no oceano Atlântico; as Baleares, no Mediterrâneo."],
+ [3,"¿Cuál es el pico más alto de España?",["El Mulhacén","El Teide","El Aneto"],1,"O Teide, em Tenerife, é o ponto mais alto da Espanha."],
+ [3,"¿En qué comunidad autónoma está Barcelona?",["Cataluña","Aragón","Comunidad Valenciana"],0,"Barcelona é a capital da Catalunha."],
+ [4,"¿Quién escribió «Don Quijote de la Mancha»?",["Lope de Vega","Miguel de Cervantes","Federico García Lorca"],1,"Miguel de Cervantes publicou o Quixote no início do século XVII."],
+ [4,"¿Qué pintor es autor de «Las Meninas»?",["Diego Velázquez","Francisco de Goya","Pablo Picasso"],0,"Las Meninas é obra de Velázquez e está no Museo del Prado."],
+ [4,"¿Qué pintor es autor del «Guernica»?",["Joan Miró","Salvador Dalí","Pablo Picasso"],2,"Picasso pintou o Guernica em 1937."],
+ [4,"¿En qué año llegó Cristóbal Colón a América?",["1492","1512","1588"],0,"A primeira viagem de Colombo chegou à América em 1492."],
+ [4,"¿Qué arquitecto diseñó la Sagrada Familia de Barcelona?",["Antoni Gaudí","Santiago Calatrava","Juan de Herrera"],0,"Gaudí projetou a Sagrada Família."],
+ [4,"¿Qué museo de Madrid, abierto en 1819, guarda obras de Velázquez y Goya?",["Museo del Prado","Museo Guggenheim","Museo Picasso"],0,"O Museo del Prado abriu em 1819."],
+ [5,"¿Cuál es el teléfono de emergencias en toda la Unión Europea?",["091","112","061"],1,"O 112 é o número único de emergências na UE."],
+ [5,"¿Qué moneda se usa en España?",["La peseta","El euro","El dólar"],1,"A Espanha usa o euro desde 2002."],
+ [5,"¿Qué día se celebra la Fiesta Nacional de España?",["El 12 de octubre","El 6 de diciembre","El 1 de mayo"],0,"A Festa Nacional é em 12 de outubro."],
+ [5,"¿Qué día se celebra el Día de la Constitución?",["El 12 de octubre","El 6 de diciembre","El 2 de mayo"],1,"Em 6 de dezembro de 1978 a Constituição foi aprovada em referendo."],
+ [5,"¿Qué documento identifica a los ciudadanos españoles?",["El NIE","El DNI","La TIE"],1,"O DNI é o documento de identidade dos espanhóis."],
+ [5,"¿Dónde se hace el empadronamiento?",["En el Ayuntamiento","En la comisaría","En el consulado"],0,"O padrão municipal é gerido pelo Ayuntamiento."],
+ [5,"¿Qué organismo gestiona las pensiones públicas?",["La Seguridad Social","El Ayuntamiento","El Banco de España"],0,"As pensões públicas são da Seguridade Social."],
+ [5,"¿Desde qué año es España miembro de las Comunidades Europeas (hoy Unión Europea)?",["1978","1986","1992"],1,"A Espanha entrou nas Comunidades Europeias em 1986."],
+ [5,"¿Qué es Cl@ve?",["Un banco público","Un sistema de identificación para trámites electrónicos","Un impuesto"],1,"Cl@ve permite identificar-se em trâmites online com a Administração."]
+];
+
+/* ---------- DELE: leitura original ---------- */
+var DELE=[
+ {t:"Anuncio de habitación",tx:"SE ALQUILA HABITACIÓN\nPiso compartido en el centro, cerca del metro. Habitación exterior con armario y escritorio. Cocina y baño compartidos con dos estudiantes. Precio: 400 € al mes, gastos de agua y luz incluidos. No se admiten animales. Disponible desde el 1 de septiembre. Llamar por las tardes al 600 000 000.",q:[
+  ["¿Cuánto cuesta la habitación al mes?",["400 € más agua y luz","400 € con agua y luz incluidas","350 €"],1],
+  ["¿Con quién se comparte la cocina?",["Con dos estudiantes","Con la familia del dueño","Con nadie"],0],
+  ["¿Se puede vivir allí con un gato?",["Sí","No","Solo en septiembre"],1],
+  ["¿Cuándo es mejor llamar?",["Por la mañana","Por la tarde","Por la noche"],1]]},
+ {t:"Correo de una amiga",tx:"Hola, Marta:\n¿Qué tal? Te escribo porque el sábado es mi cumpleaños y quiero hacer una comida en mi casa a las dos. Van a venir mis hermanos y unos compañeros del trabajo. No tienes que traer nada, pero si quieres, puedes traer un postre. Si vienes en coche, es difícil aparcar en mi calle; es mejor venir en autobús, la línea 27 para delante de mi portal.\n¡Contéstame pronto!\nUn beso,\nLucía",q:[
+  ["¿Para qué escribe Lucía?",["Para invitar a Marta a su cumpleaños","Para pedir un coche","Para hablar del trabajo"],0],
+  ["¿A qué hora es la comida?",["A la una","A las dos","A las ocho"],1],
+  ["¿Qué puede llevar Marta?",["Bebidas","Un postre","Nada, está prohibido"],1],
+  ["¿Por qué Lucía recomienda el autobús?",["Porque es más barato","Porque es difícil aparcar","Porque no hay metro"],1]]},
+ {t:"Aviso a los vecinos",tx:"AVISO A LOS VECINOS\nEl próximo martes, 14 de marzo, de 9:00 a 13:00, no habrá agua en el edificio por obras en las tuberías. Los vecinos que necesiten agua pueden recogerla en la portería antes de las 9:00. El ascensor funcionará con normalidad. Para cualquier duda, llamen al administrador: 911 000 000.\nLa Administración",q:[
+  ["¿Qué pasa el martes?",["No habrá agua en el edificio","No funcionará el ascensor","Habrá una reunión de vecinos"],0],
+  ["¿Hasta qué hora duran las obras?",["Hasta las 9:00","Hasta las 13:00","Hasta las 14:00"],1],
+  ["¿Dónde se puede recoger agua?",["En la portería","En el ascensor","En la oficina del administrador"],0],
+  ["¿Qué dice el aviso sobre el ascensor?",["Que no funciona","Que funciona normalmente","Que solo funciona por la tarde"],1]]},
+ {t:"Horario de la biblioteca",tx:"BIBLIOTECA MUNICIPAL\nHorario de invierno (octubre a mayo): de lunes a viernes, de 9:00 a 20:30; sábados, de 10:00 a 14:00. Domingos y festivos: cerrado.\nHorario de verano (junio a septiembre): de lunes a viernes, de 9:00 a 14:00.\nPréstamo: hasta 3 libros durante 15 días. Necesita el carné de la biblioteca, que es gratuito. Para hacerlo, traiga su DNI o NIE.",q:[
+  ["¿Abre la biblioteca un sábado de noviembre?",["Sí, por la mañana","No","Sí, todo el día"],0],
+  ["En julio, ¿a qué hora cierra la biblioteca?",["A las 14:00","A las 20:30","No abre en julio"],0],
+  ["¿Cuántos libros se pueden llevar a casa?",["Uno","Tres","Quince"],1],
+  ["¿Qué hay que llevar para hacer el carné?",["Una foto y dinero","El DNI o el NIE","Un libro"],1]]},
+ {t:"Menú del día",tx:"RESTAURANTE EL OLIVO — MENÚ DEL DÍA: 13,50 €\nPrimer plato: ensalada mixta o sopa de verduras.\nSegundo plato: pollo asado con patatas o merluza a la plancha.\nPostre: fruta del tiempo o flan.\nIncluye pan y una bebida (agua, refresco o copa de vino). Café no incluido.\nDe lunes a viernes, de 13:00 a 16:00.",q:[
+  ["Una persona que no come carne puede pedir de segundo…",["pollo asado","merluza a la plancha","sopa de verduras"],1],
+  ["¿Qué NO está incluido en el precio?",["El pan","La bebida","El café"],2],
+  ["¿Se puede pedir este menú el domingo?",["Sí","No","Solo por la noche"],1],
+  ["¿Qué bebida está incluida?",["Solo agua","Agua, refresco o vino","Ninguna"],1]]},
+ {t:"Nota de una compañera de trabajo",tx:"Hola, Pedro:\nMañana no puedo ir a la reunión de las diez porque tengo cita con el médico. ¿Puedes presentar tú el informe? Está en la carpeta azul, encima de mi mesa. Vuelvo a la oficina después de comer, sobre las tres.\nGracias,\nAna",q:[
+  ["¿Por qué no va Ana a la reunión?",["Porque está de vacaciones","Porque tiene cita con el médico","Porque está en otra ciudad"],1],
+  ["¿Qué le pide Ana a Pedro?",["Que presente el informe","Que vaya al médico con ella","Que compre una carpeta"],0],
+  ["¿Dónde está el informe?",["En el ordenador de Pedro","En la carpeta azul, en la mesa de Ana","En casa de Ana"],1],
+  ["¿Cuándo vuelve Ana a la oficina?",["A las diez","Por la tarde, sobre las tres","Al día siguiente"],1]]},
+ {t:"Noticia: un parque nuevo",tx:"EL AYUNTAMIENTO ABRE UN NUEVO PARQUE EN EL BARRIO\nEl nuevo parque tiene una zona de juegos para niños, un pequeño lago y un carril para bicicletas. Está abierto todos los días de 8:00 a 22:00. Los perros pueden entrar, pero siempre con correa. El alcalde explicó que en primavera van a plantar más de doscientos árboles.",q:[
+  ["¿Qué hay en el parque?",["Juegos para niños, un lago y un carril bici","Una piscina y un restaurante","Un museo"],0],
+  ["¿Pueden entrar perros?",["No","Sí, con correa","Solo por la mañana"],1],
+  ["¿Cuándo van a plantar árboles?",["En primavera","En verano","Ya están plantados"],0],
+  ["¿Qué horario tiene el parque?",["Abierto las 24 horas","De 8:00 a 22:00","Solo los fines de semana"],1]]},
+ {t:"Folleto de cursos de español",tx:"CURSOS DE ESPAÑOL PARA ADULTOS — Centro Cultural La Plaza\nNivel A2: martes y jueves, de 18:00 a 20:00.\nNivel B1: lunes y miércoles, de 19:00 a 21:00.\nPrecio: 60 € al trimestre. Las personas desempleadas pagan la mitad.\nInscripción: del 1 al 15 de septiembre, en la secretaría del centro o en nuestra web. Antes de empezar hay una prueba de nivel gratuita.",q:[
+  ["¿Qué días hay clase de nivel A2?",["Lunes y miércoles","Martes y jueves","Sábados"],1],
+  ["¿Cuánto paga una persona desempleada al trimestre?",["30 €","60 €","Nada"],0],
+  ["¿Cómo se puede hacer la inscripción?",["Solo por teléfono","En la secretaría o en la web","El primer día de clase"],1],
+  ["¿Qué es gratuito?",["El curso B1","Los libros","La prueba de nivel"],2]]},
+ {t:"Mensaje del centro de salud",tx:"Centro de Salud Las Rosas: Le recordamos su cita con la doctora Gómez el jueves 20 a las 10:15. Por favor, llegue diez minutos antes y traiga su tarjeta sanitaria. Si no puede venir, llame al 900 000 000 o cancele la cita en la aplicación. No responda a este mensaje.",q:[
+  ["¿Qué día es la cita?",["El martes 18","El jueves 20","El viernes 21"],1],
+  ["¿A qué hora tiene que llegar la persona?",["A las 10:05","A las 10:15","A las 10:25"],0],
+  ["¿Qué tiene que llevar?",["El pasaporte","La tarjeta sanitaria","Una foto"],1],
+  ["¿Cómo puede cancelar la cita?",["Respondiendo a este mensaje","Llamando por teléfono o en la aplicación","No se puede cancelar"],1]]},
+ {t:"Texto personal: Rafael",tx:"Me llamo Rafael y vivo en Valencia desde hace tres años. Antes vivía en Lima con mi familia. Trabajo en la recepción de un hotel cerca de la playa. Me gusta mi trabajo porque hablo con personas de muchos países, pero los fines de semana trabajo mucho. Los lunes, que es mi día libre, voy al mercado central y después como paella con mis amigos. Este verano mis padres vienen a visitarme por primera vez.",q:[
+  ["¿Dónde vivía Rafael antes?",["En Valencia","En Lima","En Madrid"],1],
+  ["¿Qué es lo menos agradable de su trabajo?",["Hablar con turistas","Trabajar mucho los fines de semana","Estar cerca de la playa"],1],
+  ["¿Qué hace Rafael los lunes?",["Trabaja en el hotel","Va al mercado y come con amigos","Estudia español"],1],
+  ["¿Qué va a pasar este verano?",["Sus padres lo van a visitar","Rafael vuelve a Lima","Rafael cambia de trabajo"],0]]}
+];
+
+/* ======================= ESTADO ======================= */
+var KEY="guiaNacES_v2",okStorage=true;
+function blankT(t){return {status:"fazer",motivo:"",just:"",emissao:"",venc:"",prazo:"",conclusao:"",obs:"",subs:t.subs.map(function(){return false;})};}
+function blank(){var s={v:2,nome:"",inicio:"",tasks:{},custom:[],sims:[],dele:{},dsims:[]};TASKS.forEach(function(t){s.tasks[t.id]=blankT(t);});return s;}
+function norm(x){var s=blank();if(!x||typeof x!=="object")return s;
+ s.nome=typeof x.nome==="string"?x.nome:"";s.inicio=typeof x.inicio==="string"?x.inicio:"";
+ TASKS.forEach(function(t){var y=x.tasks&&x.tasks[t.id];if(!y)return;var d=s.tasks[t.id];
+  if(ST[y.status])d.status=y.status;["motivo","just","emissao","venc","prazo","conclusao","obs"].forEach(function(k){if(typeof y[k]==="string")d[k]=y[k];});
+  if(Array.isArray(y.subs))d.subs=d.subs.map(function(v,i){return !!y.subs[i];});});
+ if(Array.isArray(x.custom))s.custom=x.custom.filter(function(c){return c&&c.id&&c.t;}).map(function(c){return {id:String(c.id),t:String(c.t),f:+c.f||1,status:ST[c.status]?c.status:"fazer",motivo:c.motivo||"",just:c.just||"",prazo:c.prazo||"",conclusao:c.conclusao||"",obs:c.obs||""};});
+ if(Array.isArray(x.sims))s.sims=x.sims.slice(-30);
+ if(Array.isArray(x.dsims))s.dsims=x.dsims.slice(-30);
+ if(x.dele&&typeof x.dele==="object")s.dele=x.dele;return s;}
+function load(){try{var r=localStorage.getItem(KEY);return r?norm(JSON.parse(r)):blank();}catch(e){okStorage=false;return blank();}}
+var S=load();
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){okStorage=false;$("semStorage").hidden=false;}}
+
+/* ======================= UTILIDADES ======================= */
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function pd(s){if(!/^\d{4}-\d{2}-\d{2}$/.test(s||""))return null;var p=s.split("-");var d=new Date(+p[0],+p[1]-1,+p[2]);return isNaN(d)?null:d;}
+function iso(d){return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);}
+function br(s){var d=pd(s);return d?("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2)+"/"+d.getFullYear():"";}
+function today(){var t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate());}
+function days(s){var d=pd(s);return d?Math.round((d-today())/864e5):null;}
+function addD(s,c){var d=pd(s);if(!d)return "";if(c.d)d.setDate(d.getDate()+c.d);if(c.m)d.setMonth(d.getMonth()+c.m);if(c.y)d.setFullYear(d.getFullYear()+c.y);return iso(d);}
+function cleanName(n){var s=(n||"").trim().split(/\s+/)[0]||"";s=s.normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9]/g,"");return s?s.charAt(0).toUpperCase()+s.slice(1).toLowerCase():"Nome";}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove("on");},3000);}
+function stamp(){return iso(today()).replace(/-/g,"");}
+
+/* ---------- lista unificada (tarefas + pessoais) ---------- */
+function all(){var a=TASKS.map(function(t){return {def:t,d:S.tasks[t.id],id:t.id,f:t.f,t:t.t,custom:false};});
+ S.custom.forEach(function(c){a.push({def:{id:c.id,t:c.t,f:c.f,c:"Tarefa pessoal",subs:[],links:[]},d:c,id:c.id,f:c.f,t:c.t,custom:true});});return a;}
+function calcVal(def,d,tgt){var c=def.calc;if(!c||c.tgt!==tgt)return "";var base=c.fromTask?S.tasks[c.fromTask][c.base]:d[c.base];return base?addD(base,c):"";}
+function eff(it,field){var v=it.d[field];if(v)return v;return calcVal(it.def,it.d,field);}
+function validity(it){if(!it.def.doc||it.d.status==="na")return null;var v=eff(it,"venc");if(!v)return null;var n=days(v);
+ if(n<0)return {k:"r",txt:"Vencido",n:n,date:v};if(n<=30)return {k:"y",txt:n===0?"Vence hoje":"Vence em "+n+(n===1?" dia":" dias"),n:n,date:v};return {k:"g",txt:"Em dia",n:n,date:v};}
+function prazoSit(it){if(it.d.status==="conc"||it.d.status==="na")return null;var p=eff(it,"prazo");if(!p)return null;var n=days(p);
+ if(n<0)return {k:"r",txt:"Prazo da ação vencido",n:n,date:p};if(n<=30)return {k:"y",txt:"Prazo da ação em "+n+(n===1?" dia":" dias"),n:n,date:p};return {k:"g",txt:"Prazo: "+br(p),n:n,date:p};}
+function counts(){var c={fazer:0,and:0,pend:0,conc:0,total:0,vence:0,venc:0};all().forEach(function(it){var s=it.d.status;if(s==="na")return;c.total++;c[s]++;var v=validity(it);if(v&&v.k==="y")c.vence++;if(v&&v.k==="r")c.venc++;});return c;}
+
+/* ======================= INÍCIO ======================= */
+function renderInicio(){
+ $("fNome").value=S.nome;$("fInicio").value=S.inicio;
+ if(S.inicio&&pd(S.inicio)){var e=addD(S.inicio,{y:2}),n=days(e);$("dEst").textContent=br(e)+(n>0?" · faltam "+n+" dias":" · os 2 anos já foram completados");}else $("dEst").textContent="Preencha a data de início";
+ var c=counts(),p=c.total?Math.round(c.conc/c.total*100):0;$("pct").textContent=p+"%";$("bar").style.width=p+"%";$("barW").setAttribute("aria-valuenow",p);
+ $("cntStatus").innerHTML=[["fazer","A fazer","s-fazer"],["and","Em andamento","s-and"],["pend","Pendente","s-pend"],["conc","Concluída","s-conc"]].map(function(x){return '<button class="stat '+x[2]+'" data-go="status:'+x[0]+'"><b>'+c[x[0]]+'</b><span>'+x[1]+'</span></button>';}).join("");
+ $("cntValid").innerHTML='<button class="stat v-y" data-go="sit:vence"><b>'+c.vence+'</b><span>Vencem em até 30 dias</span></button><button class="stat v-r" data-go="sit:vencido"><b>'+c.venc+'</b><span>Documentos vencidos</span></button>';
+ var prox=all().filter(function(it){return it.d.status!=="conc"&&it.d.status!=="na";});
+ prox.sort(function(a,b){var r={and:0,pend:1,fazer:2};return (r[a.d.status]-r[b.d.status])||(a.f-b.f);});
+ $("prox").innerHTML=prox.length?prox.slice(0,3).map(function(it){return '<li><a href="#plano" data-open="'+esc(it.id)+'">'+esc(it.t)+'</a><span class="pill p-'+it.d.status+'">'+ST[it.d.status]+'</span></li>';}).join(""):'<li class="muted">Tudo concluído.</li>';
+ var pz=[];all().forEach(function(it){var v=validity(it);if(v&&v.k!=="g")pz.push({it:it,n:v.n,txt:"Documento: "+v.txt,k:v.k,date:v.date});var a=prazoSit(it);if(a)pz.push({it:it,n:a.n,txt:a.k==="g"?"Prazo da ação":a.txt,k:a.k,date:a.date});});
+ pz.sort(function(a,b){return a.n-b.n;});
+ $("prazos").innerHTML=pz.length?pz.slice(0,6).map(function(x){return '<li><div><a href="#plano" data-open="'+esc(x.it.id)+'">'+esc(x.it.t)+'</a><div class="muted small">'+br(x.date)+'</div></div><span class="pill '+(x.txt.indexOf("Documento")===0?"v-":"a-")+x.k+'">'+esc(x.txt)+'</span></li>';}).join(""):'<li class="muted">Nenhum prazo ou vencimento preenchido.</li>';
+ var sims=S.sims,last=sims[sims.length-1],dn=0,dt=0;DELE.forEach(function(tx,i){var r=S.dele[i];if(r){dn+=r.ok;dt+=r.tot;}});
+ $("resEst").innerHTML="<b>CCSE:</b> "+(last?sims.length+" simulado(s). Último: "+last.ok+" de 25 ("+(last.ok>=15?"atingiu o corte neste simulado":"ainda não atingiu o corte")+")":"nenhum simulado feito ainda")+".<br><b>DELE A2 (leitura):</b> "+(S.dsims.length?S.dsims.length+" simulado(s). Último: nota estimada "+String(S.dsims[S.dsims.length-1].nota).replace(".",",")+" de 25":(dt?dn+" de "+dt+" acertos nos textos treinados":"nenhum exercício feito ainda"))+".";
+}
+
+/* ======================= INSTRUÇÕES ======================= */
+function renderIns(){$("insList").innerHTML=INS.map(function(x,i){return '<details class="ins" data-i="'+i+'"'+(i===0?" open":"")+'><summary>'+(i+1)+". "+x[0]+'</summary><div class="b">'+x[1]+'</div></details>';}).join("");}
+$("busca").addEventListener("input",function(){var q=this.value.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""),vis=0;
+ Array.prototype.forEach.call(document.querySelectorAll("#insList details"),function(d){var t=d.textContent.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");var m=!q||t.indexOf(q)>=0;d.hidden=!m;if(m)vis++;if(q&&m)d.open=true;});
+ $("insVazio").hidden=vis>0;});
+
+/* ======================= MEU PLANO ======================= */
+var F={q:"",fase:"",status:"",sit:""},modo="lista";
+function initFiltros(){$("pFase").innerHTML='<option value="">Todas as fases</option>'+FASES.map(function(f){return '<option value="'+f[0]+'">'+f[0]+". "+f[1]+"</option>";}).join("");
+ $("pStatus").innerHTML='<option value="">Todos os status</option>'+STATUS.map(function(s){return '<option value="'+s[0]+'">'+s[1]+"</option>";}).join("");}
+function syncFiltros(){$("pBusca").value=F.q;$("pFase").value=F.fase;$("pStatus").value=F.status;$("pSit").value=F.sit;}
+function passa(it){if(F.fase&&String(it.f)!==F.fase)return false;if(F.status&&it.d.status!==F.status)return false;
+ if(F.q){var q=F.q.toLowerCase();if((it.t+" "+(it.def.como||"")+" "+(it.d.obs||"")).toLowerCase().indexOf(q)<0)return false;}
+ if(F.sit){var v=validity(it),a=prazoSit(it);if(F.sit==="vence"&&!(v&&v.k==="y"))return false;if(F.sit==="vencido"&&!(v&&v.k==="r"))return false;if(F.sit==="prazo"&&!(a&&a.k!=="g"))return false;}
+ return true;}
+function pills(it){var h='<span class="pill p-'+it.d.status+'">'+ST[it.d.status]+(it.d.status==="pend"&&it.d.motivo?" · "+MOT[it.d.motivo]:"")+'</span>';
+ var v=validity(it);if(v)h+='<span class="pill v-'+v.k+'">Documento: '+v.txt+'</span>';var a=prazoSit(it);if(a)h+='<span class="pill a-'+a.k+'">'+esc(a.txt)+'</span>';
+ if(it.def.subs&&it.def.subs.length)h+='<span class="pill p-fazer">'+it.d.subs.filter(Boolean).length+" de "+it.def.subs.length+" subtarefas</span>";return h;}
+function valPills(it){var h="",v=validity(it),a=prazoSit(it);if(v)h+='<span class="pill v-'+v.k+'">Doc.: '+v.txt+'</span>';if(a)h+='<span class="pill a-'+a.k+'">'+esc(a.txt)+'</span>';if(it.d.status==="pend")h+='<span class="pill p-pend">'+(MOT[it.d.motivo]&&it.d.motivo?MOT[it.d.motivo]:"Motivo não informado")+'</span>';return h;}
+function stSel(it,cls){return '<select data-k="status" data-id="'+esc(it.id)+'" aria-label="Status de '+esc(it.t)+'"'+(cls?' class="'+cls+'"':'')+'>'+STATUS.map(function(s){return '<option value="'+s[0]+'"'+(it.d.status===s[0]?" selected":"")+'>'+s[1]+'</option>';}).join("")+'</select>';}
+function renderPlano(){var items=all().filter(passa);
+ if(modo==="lista"){var h="";FASES.forEach(function(f){var its=items.filter(function(it){return it.f===f[0];});if(!its.length)return;
+   var allF=all().filter(function(it){return it.f===f[0]&&it.d.status!=="na";}),dn=allF.filter(function(it){return it.d.status==="conc";}).length;
+   h+='<div class="tbl"><div class="grp"><span>'+f[0]+". "+f[1]+'</span><span class="muted small" style="font-weight:400">'+dn+" de "+allF.length+' concluídas</span></div><div class="thead"><span>Tarefa</span><span>Status</span><span>Prazo / validade</span><span>Subtarefas</span><span></span></div>';
+   h+=its.map(function(it){var n=it.def.subs?it.def.subs.length:0,k=n?it.d.subs.filter(Boolean).length:0;
+     return '<div class="tr st-'+it.d.status+'"><div class="c-name"><span class="num">'+(it.custom?"★":it.def.n)+'</span><span class="t">'+esc(it.t)+'</span></div><div class="c-st"><span class="dot d-'+it.d.status+'"></span>'+stSel(it)+'</div><div class="c-val">'+valPills(it)+'</div><div class="c-prog">'+(n?'<span class="mini"><i style="width:'+Math.round(k/n*100)+'%"></i></span>'+k+"/"+n:'<span class="muted small">—</span>')+'</div><div class="c-act"><button class="sm" data-open="'+esc(it.id)+'">Abrir</button></div></div>';}).join("")+'</div>';});
+  $("pLista").innerHTML=h||'<p class="empty">Nenhuma tarefa com esses filtros.</p>';$("pLista").hidden=false;$("pKanban").hidden=true;}
+ else{$("pKanban").innerHTML=STATUS.map(function(s){var its=items.filter(function(it){return it.d.status===s[0];});
+   return '<div class="kcol"><h4><span class="dot d-'+s[0]+'"></span>'+s[1]+'<span class="muted">'+its.length+'</span></h4>'+(its.map(function(it){return '<div class="kcard"><b>'+esc(it.t)+'</b><div class="muted small">Fase '+it.f+'</div><div class="pills">'+valPills(it)+'</div><div class="row">'+stSel(it)+'<button class="sm" data-open="'+esc(it.id)+'">Abrir</button></div></div>';}).join("")||'<p class="muted small" style="margin:4px">Vazio</p>')+'</div>';}).join("");
+  $("pKanban").hidden=false;$("pLista").hidden=true;}}
+function setStatus(id,v){var it=find(id);if(!it)return;it.d.status=v;if(v!=="pend")it.d.motivo="";if(v==="conc"&&!it.d.conclusao)it.d.conclusao=iso(today());save();renderAll();
+ if(v==="pend"&&!it.d.motivo)toast("Abra a tarefa para informar o motivo da pendência.");if(v==="na"&&!it.d.just)toast("Abra a tarefa para justificar o “Não se aplica”.");}
+function find(id){return all().filter(function(it){return it.id===id;})[0];}
+
+/* ---------- detalhe ---------- */
+var aberto=null;
+function dateField(it,k,label){var c=it.def.calc,calcTxt="";if(c&&c.tgt===k){var cv=calcVal(it.def,it.d,k);calcTxt=it.d[k]?'<div class="hint">Regra: '+c.txt+'. Você digitou uma data própria; apague para usar o cálculo.</div>':(cv?'<div class="calc">Calculado: '+br(cv)+' ('+c.txt+'). Pode digitar outra data.</div>':'<div class="hint">Será calculado: '+c.txt+'.</div>');}
+ return '<div><label>'+label+'</label><input type="date" data-k="'+k+'" value="'+esc(it.d[k])+'">'+calcTxt+'</div>';}
+function openTask(id){var it=find(id);if(!it)return;aberto=id;var d=it.d,def=it.def,h="";
+ h+='<div class="pills" style="margin-top:0">'+pills(it)+'</div>';
+ h+='<p class="muted small" style="margin:8px 0 0">Fase '+it.f+" · "+esc(FASES[it.f-1][1])+" · "+esc(def.c||"")+'</p>';
+ if(def.cond)h+='<div class="note" style="margin:10px 0">ℹ️ '+esc(def.cond)+'</div>';
+ if(def.como)h+='<p><b>Como fazer:</b> '+esc(def.como)+'</p>';
+ if(def.subs&&def.subs.length)h+='<b>Subtarefas</b><ul class="subs">'+def.subs.map(function(s,i){return '<li><label><input type="checkbox" data-k="sub" data-i="'+i+'"'+(d.subs[i]?" checked":"")+'> '+esc(s)+'</label></li>';}).join("")+'</ul>';
+ if(def.links&&def.links.length)h+='<p class="links"><b>Links oficiais:</b><br>'+def.links.map(lk).join("<br>")+'</p>';
+ if(def.val)h+='<p class="hint"><b>Regra de validade/prazo:</b> '+esc(def.val)+' (confirmar no site oficial)</p>';
+ h+='<div class="g2" style="margin-top:10px"><div><label>Status</label>'+stSel(it)+'</div>';
+ if(d.status==="pend")h+='<div><label>Motivo da pendência</label><select data-k="motivo">'+MOTIVOS.map(function(m){return '<option value="'+m[0]+'"'+(d.motivo===m[0]?" selected":"")+'>'+m[1]+'</option>';}).join("")+'</select></div>';
+ if(d.status==="na")h+='<div><label>Por que não se aplica?</label><input type="text" data-k="just" value="'+esc(d.just)+'" placeholder="Justificativa curta"></div>';
+ h+='</div><div class="g2" style="margin-top:10px">';
+ if(def.doc||def.dates)h+=dateField(it,"emissao",def.dl||"Data de emissão");
+ if(def.doc)h+=dateField(it,"venc","Data de vencimento do documento");
+ h+=dateField(it,"prazo","Prazo da ação");
+ h+=dateField(it,"conclusao",it.id==="res"?"Data de conclusão (data da notificação)":"Data de conclusão");
+ h+='</div><div style="margin-top:10px"><label>Observação</label><textarea data-k="obs" placeholder="Anotações livres">'+esc(d.obs)+'</textarea></div>';
+ if(def.doc){var fn=cleanName(S.nome)+def.doc+".pdf";h+='<div class="fname"><span class="muted small">Nome do arquivo:</span><code>'+esc(fn)+'</code><button class="sm" data-act="copiar" data-v="'+esc(fn)+'">Copiar nome</button></div>';}
+ if(it.custom)h+='<div class="btns" style="margin-top:12px"><button class="danger sm" data-act="apagarTarefa" data-id="'+esc(it.id)+'">Apagar esta tarefa pessoal</button></div>';
+ $("dlgT").textContent=(it.custom?"★ ":it.def.n+". ")+it.t;$("dlgB").innerHTML=h;$("dlg").classList.add("on");}
+function closeDlg(){$("dlg").classList.remove("on");aberto=null;}
+$("dlg").addEventListener("click",function(e){if(e.target===this)closeDlg();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&$("dlg").classList.contains("on"))closeDlg();});
+$("dlgB").addEventListener("change",function(e){var el=e.target,k=el.dataset.k;if(!k||!aberto)return;
+ if(k==="status"){setStatus(el.dataset.id,el.value);openTask(aberto);return;}
+ var it=find(aberto);if(!it)return;
+ if(k==="sub"){it.d.subs[+el.dataset.i]=el.checked;var sb=it.d.subs;if(sb.every(Boolean)&&it.d.status!=="na"){it.d.status="conc";if(!it.d.conclusao)it.d.conclusao=iso(today());}else if(sb.some(Boolean)&&it.d.status==="fazer")it.d.status="and";else if(!sb.every(Boolean)&&it.d.status==="conc")it.d.status="and";}
+ else if(["emissao","venc","prazo","conclusao","motivo","just"].indexOf(k)>=0)it.d[k]=el.value;else return;
+ save();renderAll();openTask(aberto);});
+$("dlgB").addEventListener("input",function(e){var el=e.target;if(!aberto)return;var it=find(aberto);if(!it)return;if(el.dataset.k==="obs"||el.dataset.k==="just"){it.d[el.dataset.k]=el.value;save();}});
+
+/* ======================= CCSE ======================= */
+var quiz=null,timerH=null;
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function initCcse(){$("cTema").innerHTML='<option value="0">Todos os temas</option>'+TEMAS.map(function(t){return '<option value="'+t[0]+'">'+t[0]+". "+t[1]+'</option>';}).join("");}
+function startEstudo(){var tema=+$("cTema").value;var qs=QS.map(function(q,i){return i;}).filter(function(i){return !tema||QS[i][0]===tema;});quiz={mode:"estudo",qs:shuffle(qs),pos:0,ans:{}};renderQuiz();}
+function startSim(){var qs=[];TEMAS.forEach(function(t){var pool=shuffle(QS.map(function(q,i){return i;}).filter(function(i){return QS[i][0]===t[0];}));qs=qs.concat(pool.slice(0,DIST[t[0]]));});
+ quiz={mode:"sim",qs:qs,pos:0,ans:{},end:Date.now()+45*60000};clearInterval(timerH);timerH=setInterval(tick,1000);renderQuiz();}
+function tick(){if(!quiz||quiz.mode!=="sim"){clearInterval(timerH);return;}var r=Math.max(0,quiz.end-Date.now());var el=$("tmr");if(el)el.textContent=Math.floor(r/60000)+":"+("0"+Math.floor(r%60000/1000)).slice(-2);if(r<=0){finishSim(true);}}
+function renderQuiz(){var a=$("cArea");if(!quiz){a.innerHTML="";return;}var i=quiz.qs[quiz.pos],q=QS[i],ans=quiz.ans[i],h="";
+ h+='<div class="q"><div style="display:flex;justify-content:space-between;gap:8px"><span class="muted small">'+(quiz.mode==="sim"?"Simulado":"Estudo")+" · questão "+(quiz.pos+1)+" de "+quiz.qs.length+" · tema "+q[0]+'</span>'+(quiz.mode==="sim"?'<span class="timer" id="tmr" aria-live="off"></span>':'')+'</div>';
+ h+='<p style="font-weight:600;margin:8px 0 0">'+esc(q[1])+'</p><div class="opts">';
+ q[2].forEach(function(o,j){var cls="";if(quiz.mode==="estudo"&&ans!=null){if(j===q[3])cls="ok";else if(j===ans)cls="no";}else if(quiz.mode==="sim"&&ans===j)cls="sel";
+  h+='<button class="'+cls+'" data-ans="'+j+'"'+(quiz.mode==="estudo"&&ans!=null?" disabled":"")+'>'+"abc"[j]+") "+esc(o)+'</button>';});
+ h+='</div>';if(quiz.mode==="estudo"&&ans!=null)h+='<p class="'+(ans===q[3]?"":"")+'" style="margin:10px 0 0"><b>'+(ans===q[3]?"✔ Correto.":"✘ Incorreto.")+'</b> '+esc(q[4])+'</p>';
+ h+='<div class="btns"><button class="sm" data-act="qPrev"'+(quiz.pos===0?" disabled":"")+'>← Anterior</button>';
+ if(quiz.pos<quiz.qs.length-1)h+='<button class="sm" data-act="qNext">Próxima →</button>';
+ if(quiz.mode==="sim")h+='<button class="sm pri" data-act="qFim">Terminar e corrigir</button>';else h+='<button class="sm" data-act="qSair">Sair do estudo</button>';
+ h+='</div></div>';a.innerHTML=h;if(quiz.mode==="sim")tick();}
+function finishSim(porTempo){if(!quiz||quiz.mode!=="sim")return;clearInterval(timerH);var ok=0,porTema={};
+ quiz.qs.forEach(function(i){var q=QS[i],t=q[0];porTema[t]=porTema[t]||{ok:0,tot:0};porTema[t].tot++;if(quiz.ans[i]===q[3]){ok++;porTema[t].ok++;}});
+ var r={data:new Date().toISOString(),ok:ok,porTema:porTema};S.sims.push(r);if(S.sims.length>30)S.sims.shift();save();
+ var fracos=TEMAS.filter(function(t){var p=porTema[t[0]];return p&&p.ok/p.tot<0.6;}).map(function(t){return t[1];});
+ var h='<div class="q"><h3 style="margin-top:0">Resultado do simulado'+(porTempo?" (tempo esgotado)":"")+'</h3>';
+ h+='<p style="font-size:1.2rem;margin:4px 0"><b>'+ok+' acertos</b> · '+(25-ok)+' erros · '+Math.round(ok/25*100)+'%</p>';
+ h+='<p><span class="pill '+(ok>=15?"v-g":"v-r")+'">'+(ok>=15?"Atingiu o corte neste simulado":"Ainda não atingiu o corte")+'</span></p>';
+ h+='<p class="hint">Treino com questões não oficiais. Não é aprovação oficial.</p>';
+ h+='<table class="res"><tr><th>Tema</th><th>Acertos</th></tr>'+TEMAS.map(function(t){var p=porTema[t[0]]||{ok:0,tot:0};return '<tr><td>'+t[0]+". "+t[1]+'</td><td>'+p.ok+" de "+p.tot+'</td></tr>';}).join("")+'</table>';
+ h+='<p><b>O que revisar:</b> '+(fracos.length?esc(fracos.join(", ")):"nenhum tema abaixo de 60%. Continue estudando pelo manual oficial.")+'</p>';
+ h+='<details class="ins"><summary>Ver respostas comentadas</summary><div class="b">'+quiz.qs.map(function(i,n){var q=QS[i],a=quiz.ans[i];return '<p><b>'+(n+1)+". "+esc(q[1])+'</b><br>'+(a===q[3]?"✔":"✘")+" Sua resposta: "+(a==null?"(em branco)":esc(q[2][a]))+" · Correta: "+esc(q[2][q[3]])+'<br><span class="muted small">'+esc(q[4])+'</span></p>';}).join("")+'</div></details>';
+ h+='<div class="btns"><button class="pri sm" data-act="simulado">Novo simulado</button><button class="sm" data-act="qSair">Fechar</button></div></div>';
+ quiz=null;$("cArea").innerHTML=h;renderHist();renderInicio();}
+function renderHist(){var s=S.sims;$("cHist").innerHTML=s.length?'<table class="res"><tr><th>Data</th><th>Acertos</th><th>Resultado</th></tr>'+s.slice().reverse().map(function(r){var d=new Date(r.data);return '<tr><td>'+d.toLocaleDateString("pt-BR")+'</td><td>'+r.ok+' / 25</td><td>'+(r.ok>=15?"Atingiu o corte":"Não atingiu")+'</td></tr>';}).join("")+'</table>':"Nenhum simulado ainda.";}
+$("cArea").addEventListener("click",function(e){var b=e.target.closest("[data-ans]");if(!b||!quiz)return;var i=quiz.qs[quiz.pos];if(quiz.mode==="estudo"&&quiz.ans[i]!=null)return;quiz.ans[i]=+b.dataset.ans;renderQuiz();});
+
+/* ======================= DELE ======================= */
+var dt=null;
+function initDTxt(){$("dTxt").innerHTML='<option value="all">Todos os textos, em sequência (40 perguntas)</option>'+DELE.map(function(t,i){var r=S.dele[i];return '<option value="'+i+'">'+(i+1)+". "+esc(t.t)+(r?" — último: "+r.ok+"/"+r.tot:"")+'</option>';}).join("");}
+function startDTreino(){var v=$("dTxt").value,its=[];(v==="all"?DELE.map(function(t,i){return i;}):[+v]).forEach(function(ti){DELE[ti].q.forEach(function(q,qi){its.push([ti,qi]);});});dt={its:its,pos:0,ans:{},done:false};renderDele();$("dArea").scrollIntoView({behavior:"smooth",block:"start"});}
+function renderDele(){var a=$("dArea");initDTxt();if(!dt){a.innerHTML="";return;}
+ if(dt.done){var por={},ok=0;dt.its.forEach(function(x){var k=x[0]+"_"+x[1],c=dt.ans[k]===DELE[x[0]].q[x[1]][2];por[x[0]]=por[x[0]]||{ok:0,tot:0};por[x[0]].tot++;if(c){por[x[0]].ok++;ok++;}});
+  var h='<div class="q"><h3 style="margin-top:0">Resultado do treino</h3><p style="font-size:1.15rem;margin:4px 0"><b>'+ok+" de "+dt.its.length+' acertos</b> · '+Math.round(ok/dt.its.length*100)+'%</p>';
+  h+='<table class="res"><tr><th>Texto</th><th>Acertos</th></tr>'+Object.keys(por).map(function(ti){return '<tr><td>'+esc(DELE[ti].t)+'</td><td>'+por[ti].ok+" de "+por[ti].tot+'</td></tr>';}).join("")+'</table>';
+  h+='<p class="hint">Treino com textos originais, não oficiais.</p><div class="btns"><button class="pri sm" data-act="dTreino">Treinar de novo</button><button class="sm" data-act="dTSair">Fechar</button></div></div>';a.innerHTML=h;return;}
+ var x=dt.its[dt.pos],ti=x[0],qi=x[1],t=DELE[ti],q=t.q[qi],k=ti+"_"+qi,an=dt.ans[k],h='<div class="q">';
+ h+='<div class="muted small">Treino · pergunta '+(dt.pos+1)+" de "+dt.its.length+" · "+esc(t.t)+'</div>';
+ h+='<p style="white-space:pre-line;background:#F7F8FA;border:1px solid var(--line);padding:14px;border-radius:10px;margin:10px 0 0">'+esc(t.tx)+'</p>';
+ h+='<p style="font-weight:600;margin:16px 0 0">'+(qi+1)+". "+esc(q[0])+'</p><div class="opts">';
+ q[1].forEach(function(o,oi){var c="";if(an!=null){if(oi===q[2])c="ok";else if(oi===an)c="no";}h+='<button class="'+c+'" data-dt="'+oi+'"'+(an!=null?" disabled":"")+'>'+"abc"[oi]+") "+esc(o)+'</button>';});
+ h+='</div>';if(an!=null)h+='<p style="margin:12px 0 0"><b>'+(an===q[2]?"✔ Correto.":"✘ Incorreto.")+'</b> '+(an===q[2]?"":"Resposta certa: "+esc(q[1][q[2]])+". ")+'Releia o texto para ver onde está a informação.</p>';
+ h+='<div class="btns"><button class="sm" data-act="dTPrev"'+(dt.pos===0?" disabled":"")+'>← Anterior</button>';
+ h+=dt.pos<dt.its.length-1?'<button class="sm" data-act="dTNext">Próxima →</button>':'<button class="sm pri" data-act="dTFim">Ver resultado</button>';
+ h+='<button class="sm" data-act="dTSair">Sair do treino</button></div></div>';a.innerHTML=h;}
+function finishDTreino(){var por={};dt.its.forEach(function(x){var k=x[0]+"_"+x[1];por[x[0]]=por[x[0]]||{ok:0,tot:0};por[x[0]].tot++;if(dt.ans[k]===DELE[x[0]].q[x[1]][2])por[x[0]].ok++;});
+ Object.keys(por).forEach(function(ti){S.dele[ti]={ok:por[ti].ok,tot:por[ti].tot};});save();dt.done=true;renderDele();renderInicio();}
+$("dArea").addEventListener("click",function(e){var b=e.target.closest("[data-dt]");if(!b||!dt||dt.done)return;var x=dt.its[dt.pos],k=x[0]+"_"+x[1];if(dt.ans[k]!=null)return;dt.ans[k]=+b.dataset.dt;renderDele();});
+
+
+/* ======================= SIMULADO DELE (leitura) ======================= */
+var dq=null,dTimer=null;
+function startDSim(){var tx=shuffle(DELE.map(function(t,i){return i;})).slice(0,6);dq={tx:tx,pos:0,ans:{},end:Date.now()+60*60000};clearInterval(dTimer);dTimer=setInterval(dTick,1000);renderDSim();$("dSimArea").scrollIntoView({behavior:"smooth",block:"start"});}
+function dTick(){if(!dq){clearInterval(dTimer);return;}var r=Math.max(0,dq.end-Date.now()),el=$("dTmr");if(el)el.textContent=Math.floor(r/60000)+":"+("0"+Math.floor(r%60000/1000)).slice(-2);if(r<=0)finishDSim(true);}
+function renderDSim(){var a=$("dSimArea");if(!dq){a.innerHTML="";return;}var ti=dq.tx[dq.pos],t=DELE[ti],h='<div class="q"><div style="display:flex;justify-content:space-between;gap:8px"><span class="muted small">Simulado de leitura · texto '+(dq.pos+1)+" de "+dq.tx.length+'</span><span class="timer" id="dTmr"></span></div>';
+ h+='<h3 style="margin:10px 0 6px">'+esc(t.t)+'</h3><p style="white-space:pre-line;background:#F7F8FA;border:1px solid var(--line);padding:14px;border-radius:10px;margin:0">'+esc(t.tx)+'</p>';
+ t.q.forEach(function(q,qi){var k=ti+"_"+qi;h+='<p style="font-weight:500;margin:16px 0 0">'+(qi+1)+". "+esc(q[0])+'</p><div class="opts">'+q[1].map(function(o,oi){return '<button class="'+(dq.ans[k]===oi?"sel":"")+'" data-dans="'+k+'" data-v="'+oi+'">'+"abc"[oi]+") "+esc(o)+'</button>';}).join("")+'</div>';});
+ h+='<div class="btns"><button class="sm" data-act="dPrev"'+(dq.pos===0?" disabled":"")+'>← Texto anterior</button>'+(dq.pos<dq.tx.length-1?'<button class="sm" data-act="dNext">Próximo texto →</button>':'')+'<button class="sm pri" data-act="dFim">Terminar e corrigir</button></div></div>';
+ a.innerHTML=h;dTick();}
+function finishDSim(porTempo){if(!dq)return;clearInterval(dTimer);var ok=0,tot=0,por=[];
+ dq.tx.forEach(function(ti){var t=DELE[ti],o=0;t.q.forEach(function(q,qi){tot++;if(dq.ans[ti+"_"+qi]===q[2]){ok++;o++;}});por.push({t:t.t,ok:o,tot:t.q.length});});
+ var nota=Math.round(ok/tot*25*10)/10,falta=Math.max(0,Math.round((30-nota)*10)/10);
+ S.dsims.push({data:new Date().toISOString(),ok:ok,tot:tot,nota:nota});if(S.dsims.length>30)S.dsims.shift();save();
+ var h='<div class="q"><h3 style="margin-top:0">Resultado do simulado de leitura'+(porTempo?" (tempo esgotado)":"")+'</h3>';
+ h+='<p style="font-size:1.15rem;margin:4px 0"><b>'+ok+" de "+tot+' acertos</b> · '+Math.round(ok/tot*100)+'%</p>';
+ h+='<p>Nota estimada da leitura: <b>'+String(nota).replace(".",",")+' de 25</b></p>';
+ h+='<div class="note" style="margin:10px 0">Para o <b>Grupo 1</b> (leitura + escrita) é preciso somar pelo menos <b>30 de 50</b>. Com esta leitura, a escrita precisaria de <b>'+String(falta).replace(".",",")+' de 25</b>'+(falta>25?" — mais do que o máximo possível. Reforce a leitura.":".")+' Este site não avalia escrita, compreensão auditiva nem fala, por isso não mostra “Apto”.</div>';
+ h+='<table class="res"><tr><th>Texto</th><th>Acertos</th></tr>'+por.map(function(p){return '<tr><td>'+esc(p.t)+'</td><td>'+p.ok+" de "+p.tot+'</td></tr>';}).join("")+'</table>';
+ var fracos=por.filter(function(p){return p.ok/p.tot<0.75;}).map(function(p){return p.t;});
+ h+='<p><b>O que revisar:</b> '+(fracos.length?esc(fracos.join(", "))+". Releia esses textos no treino por texto.":"bom desempenho em todos os textos. Treine também com o modelo oficial do Instituto Cervantes.")+'</p>';
+ h+='<details class="ins"><summary>Ver respostas</summary><div class="b">'+dq.tx.map(function(ti){var t=DELE[ti];return '<p><b>'+esc(t.t)+'</b></p>'+t.q.map(function(q,qi){var a=dq.ans[ti+"_"+qi];return '<p class="small">'+(a===q[2]?"✔":"✘")+" "+esc(q[0])+'<br><span class="muted">Sua resposta: '+(a==null?"(em branco)":esc(q[1][a]))+" · Correta: "+esc(q[1][q[2]])+'</span></p>';}).join("");}).join("")+'</div></details>';
+ h+='<p class="hint">Treino com textos originais, não oficiais. Não é resultado oficial.</p><div class="btns"><button class="pri sm" data-act="dSim">Novo simulado</button><button class="sm" data-act="dSair">Fechar</button></div></div>';
+ dq=null;$("dSimArea").innerHTML=h;renderDHist();renderInicio();}
+function renderDHist(){var s=S.dsims;$("dHist").innerHTML=s.length?'<table class="res"><tr><th>Data</th><th>Acertos</th><th>Nota estimada</th></tr>'+s.slice().reverse().map(function(r){return '<tr><td>'+new Date(r.data).toLocaleDateString("pt-BR")+'</td><td>'+r.ok+" / "+r.tot+'</td><td>'+String(r.nota).replace(".",",")+' / 25</td></tr>';}).join("")+'</table>':"Nenhum simulado ainda.";}
+$("dSimArea").addEventListener("click",function(e){var b=e.target.closest("[data-dans]");if(!b||!dq)return;dq.ans[b.dataset.dans]=+b.dataset.v;renderDSim();});
+/* ======================= EXCEL (.xlsx) ======================= */
+var CRC=(function(){var t=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}return t;})();
+function crc32(b){var c=0xFFFFFFFF;for(var i=0;i<b.length;i++)c=CRC[(c^b[i])&255]^(c>>>8);return (c^0xFFFFFFFF)>>>0;}
+function zip(files){var enc=new TextEncoder(),parts=[],cen=[],off=0;
+ files.forEach(function(f){var nm=enc.encode(f.name),dt=enc.encode(f.data),cr=crc32(dt);
+  var h=new DataView(new ArrayBuffer(30));h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(12,0x21,true);h.setUint32(14,cr,true);h.setUint32(18,dt.length,true);h.setUint32(22,dt.length,true);h.setUint16(26,nm.length,true);
+  parts.push(new Uint8Array(h.buffer),nm,dt);
+  var c=new DataView(new ArrayBuffer(46));c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,0x0800,true);c.setUint16(14,0x21,true);c.setUint32(16,cr,true);c.setUint32(20,dt.length,true);c.setUint32(24,dt.length,true);c.setUint16(28,nm.length,true);c.setUint32(42,off,true);
+  cen.push(new Uint8Array(c.buffer),nm);off+=30+nm.length+dt.length;});
+ var cs=0;cen.forEach(function(p){cs+=p.length;});var e=new DataView(new ArrayBuffer(22));e.setUint32(0,0x06054b50,true);e.setUint16(8,files.length,true);e.setUint16(10,files.length,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);
+ return new Blob(parts.concat(cen,[new Uint8Array(e.buffer)]),{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});}
+function xe(s){return String(s==null?"":s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g,"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function colL(i){var s="";i++;while(i>0){var m=(i-1)%26;s=String.fromCharCode(65+m)+s;i=Math.floor((i-1)/26);}return s;}
+function sheet(rows,widths){var x='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>'+widths.map(function(w,i){return '<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';}).join("")+'</cols><sheetData>';
+ rows.forEach(function(r,ri){x+='<row r="'+(ri+1)+'">';r.forEach(function(c,ci){var v=(c&&typeof c==="object")?c:{v:c};var ref=colL(ci)+(ri+1),s=' s="'+(v.s||5)+'"';
+  x+='<c r="'+ref+'"'+s+' t="inlineStr"><is><t xml:space="preserve">'+xe(v.v)+'</t></is></c>';});x+='</row>';});return x+'</sheetData></worksheet>';}
+function buildXlsx(){var c=counts(),p=c.total?Math.round(c.conc/c.total*100):0,H=function(t){return {v:t,s:1};};
+ var est=S.inicio&&pd(S.inicio)?br(addD(S.inicio,{y:2})):"—";
+ var cab=["Fase","Nº","Tarefa","Subtarefas concluídas","Status","Motivo da pendência","Data de emissão","Data de vencimento","Situação da validade","Prazo da ação","Data de conclusão","Nome do arquivo","Link oficial","Observação"].map(H);
+ var rows=[cab];all().sort(function(a,b){return a.f-b.f;}).forEach(function(it){var v=validity(it),sit="—",ss=5;if(v){sit=v.k==="r"?"Vencido":v.k==="y"?"Vence em até 30 dias":"Em dia";ss=v.k==="g"?2:v.k==="y"?3:4;}
+  var subs=it.def.subs&&it.def.subs.length?it.d.subs.filter(Boolean).length+" de "+it.def.subs.length:"—";
+  rows.push([it.f+". "+FASES[it.f-1][1],it.custom?"★":it.def.n,it.t,subs,ST[it.d.status]+(it.d.status==="na"&&it.d.just?" ("+it.d.just+")":""),it.d.status==="pend"?(MOT[it.d.motivo]||"Não informado"):"",br(it.d.emissao),br(eff(it,"venc")),{v:sit,s:ss},br(eff(it,"prazo")),br(it.d.conclusao),it.def.doc?cleanName(S.nome)+it.def.doc+".pdf":"",(it.def.links||[]).map(function(k){return L[k][1];}).join("\n"),it.d.obs]);});
+ var st='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="6"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF8E8EB"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFE5F2EA"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFFFF4D6"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF8D5DB"/></patternFill></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="6"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1"/><xf numFmtId="0" fontId="1" fillId="3" borderId="0" xfId="0" applyFont="1" applyFill="1"/><xf numFmtId="0" fontId="1" fillId="4" borderId="0" xfId="0" applyFont="1" applyFill="1"/><xf numFmtId="0" fontId="1" fillId="5" borderId="0" xfId="0" applyFont="1" applyFill="1"/><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+ var R="http://schemas.openxmlformats.org/";
+ return zip([
+  {name:"[Content_Types].xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="'+R+'package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>'},
+  {name:"_rels/.rels",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="'+R+'package/2006/relationships"><Relationship Id="rId1" Type="'+R+'officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>'},
+  {name:"xl/workbook.xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="'+R+'spreadsheetml/2006/main" xmlns:r="'+R+'officeDocument/2006/relationships"><sheets><sheet name="Meu plano" sheetId="1" r:id="rId1"/></sheets></workbook>'},
+  {name:"xl/_rels/workbook.xml.rels",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="'+R+'package/2006/relationships"><Relationship Id="rId1" Type="'+R+'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId3" Type="'+R+'officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'},
+  {name:"xl/styles.xml",data:st},
+  {name:"xl/worksheets/sheet1.xml",data:sheet(rows,[28,5,44,14,18,22,14,16,20,14,14,36,50,40])}]);}
+
+/* ======================= DOWNLOAD / BACKUP ======================= */
+function baixar(nome,blob){try{var u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=nome;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove();},4000);toast("Arquivo gerado: "+nome);}catch(e){toast("Não foi possível baixar neste navegador.");}}
+function exportBackup(){var txt=JSON.stringify({app:"guia-nacionalidade-es",versao:2,exportado:new Date().toISOString(),dados:S},null,2);baixar(cleanName(S.nome)+"BackupNacionalidade"+stamp()+".json",new Blob([txt],{type:"application/json"}));}
+$("fileIn").addEventListener("change",function(){var f=this.files&&this.files[0];if(!f)return;var r=new FileReader();
+ r.onload=function(){try{var j=JSON.parse(r.result),d=j&&j.dados?j.dados:j;if(!d||typeof d!=="object"||!d.tasks)throw 0;
+  confirmar("Importar backup?","Os dados atuais deste aparelho serão substituídos pelos do arquivo <b>"+esc(f.name)+"</b>.","Importar",function(){S=norm(d);save();renderAll();toast("Backup importado.");});}
+  catch(e){toast("Arquivo inválido. Use um backup exportado por este site.");}};r.readAsText(f);this.value="";});
+function confirmar(tit,html,lbl,fn){$("dlgT").textContent=tit;$("dlgB").innerHTML='<p>'+html+'</p><div class="btns"><button data-act="fechar">Cancelar</button><button class="pri" id="okBtn">'+esc(lbl)+'</button></div>';aberto=null;$("dlg").classList.add("on");$("okBtn").onclick=function(){fn();closeDlg();};}
+function novaTarefa(){$("dlgT").textContent="Nova tarefa pessoal";$("dlgB").innerHTML='<label for="ntT">Título</label><input type="text" id="ntT" placeholder="Ex.: Pedir segunda via do RG"><label for="ntF" style="margin-top:10px">Fase</label><select id="ntF">'+FASES.map(function(f){return '<option value="'+f[0]+'">'+f[0]+". "+f[1]+'</option>';}).join("")+'</select><div class="btns"><button data-act="fechar">Cancelar</button><button class="pri" id="ntOk">Criar</button></div>';aberto=null;$("dlg").classList.add("on");
+ $("ntOk").onclick=function(){var t=$("ntT").value.trim();if(!t){$("ntT").focus();return;}var c={id:"u"+Date.now(),t:t,f:+$("ntF").value,status:"fazer",motivo:"",just:"",prazo:"",conclusao:"",obs:""};S.custom.push(c);save();closeDlg();renderAll();toast("Tarefa criada.");};}
+function copiar(t){function fb(){$("dlgT").textContent="Copie o nome";$("dlgB").innerHTML='<input type="text" readonly value="'+esc(t)+'" onfocus="this.select()">';$("dlg").classList.add("on");}
+ try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast("Copiado: "+t);},fb);return;}}catch(e){}fb();}
+
+/* ======================= EVENTOS GERAIS ======================= */
+$("fNome").addEventListener("input",function(){S.nome=this.value;save();renderInicio();});
+$("fInicio").addEventListener("change",function(){S.inicio=this.value;save();renderInicio();});
+$("pBusca").addEventListener("input",function(){F.q=this.value;renderPlano();});
+["pFase","pStatus","pSit"].forEach(function(id,i){$(id).addEventListener("change",function(){F[["fase","status","sit"][i]]=this.value;renderPlano();});});
+$("vLista").onclick=function(){modo="lista";this.classList.add("on");$("vKanban").classList.remove("on");renderPlano();};
+$("vKanban").onclick=function(){modo="kanban";this.classList.add("on");$("vLista").classList.remove("on");renderPlano();};
+document.querySelector("main").addEventListener("change",function(e){var el=e.target;if(el.dataset.k==="status"&&el.dataset.id&&!el.closest("#dlg"))setStatus(el.dataset.id,el.value);});
+document.addEventListener("click",function(e){
+ var g=e.target.closest("[data-go]");if(g){var p=g.dataset.go.split(":");F={q:"",fase:"",status:"",sit:""};F[p[0]]=p[1];syncFiltros();go("plano");return;}
+ var o=e.target.closest("[data-open]");if(o){e.preventDefault();if(currentView()!=="plano")go("plano");openTask(o.dataset.open);return;}
+ var b=e.target.closest("[data-act]");if(!b)return;var a=b.dataset.act;
+ if(a==="fechar")closeDlg();else if(a==="excel")baixar(cleanName(S.nome)+"PlanoNacionalidade"+stamp()+".xlsx",buildXlsx());else if(a==="backup")exportBackup();else if(a==="importar")$("fileIn").click();
+ else if(a==="reset")confirmar("Reiniciar tudo?","Isso apaga <b>todos</b> os dados deste aparelho: nome, datas, status, observações, tarefas pessoais e histórico de estudos. Se quiser guardar, exporte um backup antes.","Apagar tudo",function(){S=blank();save();quiz=null;dq=null;dt=null;clearInterval(dTimer);$("dSimArea").innerHTML="";renderAll();renderQuiz();toast("Tudo reiniciado.");});
+ else if(a==="limparFiltro"){F={q:"",fase:"",status:"",sit:""};syncFiltros();renderPlano();}
+ else if(a==="novaTarefa")novaTarefa();
+ else if(a==="copiar")copiar(b.dataset.v);
+ else if(a==="apagarTarefa"){var id=b.dataset.id;confirmar("Apagar tarefa pessoal?","Esta ação não pode ser desfeita.","Apagar",function(){S.custom=S.custom.filter(function(c){return c.id!==id;});save();renderAll();});}
+ else if(a==="estudo")startEstudo();else if(a==="simulado")startSim();
+ else if(a==="qNext"){quiz.pos++;renderQuiz();}else if(a==="qPrev"){quiz.pos--;renderQuiz();}
+ else if(a==="qFim"){var faltam=quiz.qs.filter(function(i){return quiz.ans[i]==null;}).length;if(faltam)confirmar("Terminar o simulado?","Ainda há <b>"+faltam+"</b> questão(ões) em branco.","Terminar e corrigir",function(){finishSim(false);});else finishSim(false);}
+ else if(a==="qSair"){quiz=null;clearInterval(timerH);$("cArea").innerHTML="";}
+ else if(a==="dTreino")startDTreino();else if(a==="dTNext"){dt.pos++;renderDele();}else if(a==="dTPrev"){dt.pos--;renderDele();}else if(a==="dTFim")finishDTreino();else if(a==="dTSair"){dt=null;renderDele();}
+ else if(a==="deleCorrigir"){var ti=+b.dataset.t,tx=DELE[ti],ans=[],ok=0;tx.q.forEach(function(q,qi){var r=document.querySelector('input[name="d'+ti+'_'+qi+'"]:checked');var v=r?+r.value:null;ans.push(v);if(v===q[2])ok++;});S.dele[ti]={ok:ok,tot:tx.q.length,ans:ans};save();renderDele();renderInicio();}
+ else if(a==="dSim")startDSim();else if(a==="dNext"){dq.pos++;renderDSim();window.scrollTo(0,$("dSimArea").offsetTop-70);}else if(a==="dPrev"){dq.pos--;renderDSim();window.scrollTo(0,$("dSimArea").offsetTop-70);}
+ else if(a==="dFim"){var tot=0;dq.tx.forEach(function(ti){tot+=DELE[ti].q.length;});var fl=tot-Object.keys(dq.ans).length;if(fl)confirmar("Terminar o simulado?","Ainda há <b>"+fl+"</b> pergunta(s) em branco.","Terminar e corrigir",function(){finishDSim(false);});else finishDSim(false);}
+ else if(a==="dSair"){dq=null;clearInterval(dTimer);$("dSimArea").innerHTML="";}
+ else if(a==="deleRefazer"){delete S.dele[+b.dataset.t];save();renderDele();renderInicio();}
+});
+
+/* ======================= NAVEGAÇÃO ======================= */
+var VIEWS=["inicio","instrucoes","plano","ccse","dele"],cur="inicio";
+function currentView(){return cur;}
+function show(v){if(VIEWS.indexOf(v)<0)v="inicio";cur=v;VIEWS.forEach(function(x){$("v-"+x).classList.toggle("on",x===v);});
+ Array.prototype.forEach.call(document.querySelectorAll(".snav a"),function(a){var on=a.dataset.v===v;a.classList.toggle("on",on);if(on)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+ var TT={inicio:"Dashboard",instrucoes:"Instruções",plano:"Meu plano",ccse:"CCSE",dele:"DELE A2"};$("mTitle").textContent=TT[v];
+ if(v==="plano")renderPlano();if(v==="inicio")renderInicio();}
+function go(v){if(location.hash!=="#"+v){try{location.hash=v;}catch(e){}}show(v);window.scrollTo(0,0);}
+window.addEventListener("hashchange",function(){show((location.hash||"").slice(1));window.scrollTo(0,0);});
+document.querySelector(".snav").addEventListener("click",function(e){var a=e.target.closest("a");if(!a)return;e.preventDefault();go(a.dataset.v);menu(false);});
+function menu(o){$("side").classList.toggle("open",o);$("scrim").classList.toggle("on",o);}
+$("menuBtn").onclick=function(){menu(!$("side").classList.contains("open"));};$("scrim").onclick=function(){menu(false);};
+
+function renderAll(){renderInicio();renderPlano();renderHist();renderDele();renderDHist();}
+if(!okStorage)$("semStorage").hidden=false;
+initFiltros();initCcse();renderIns();renderAll();show((location.hash||"").slice(1));
+})();
+</script>
+</body>
+</html>
